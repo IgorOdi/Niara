@@ -27,6 +27,7 @@ TextureImporter:
     21300040: final boss_20
     21300042: final boss_21
     21300044: final boss_22
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -35,6 +36,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -50,10 +53,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: -1
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -75,6 +81,7 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -83,6 +90,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -91,6 +99,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: WebGL
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -112,6 +121,7 @@ TextureImporter:
       pivot: {x: 0.49281165, y: 0.4913985}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_1
@@ -125,6 +135,7 @@ TextureImporter:
       pivot: {x: 0.49323612, y: 0.49219862}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_2
@@ -138,6 +149,7 @@ TextureImporter:
       pivot: {x: 0.4964212, y: 0.4951235}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_3
@@ -151,6 +163,7 @@ TextureImporter:
       pivot: {x: 0.49682724, y: 0.49658462}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_4
@@ -164,6 +177,7 @@ TextureImporter:
       pivot: {x: 0.50300395, y: 0.5180209}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_5
@@ -177,6 +191,7 @@ TextureImporter:
       pivot: {x: 0.50040936, y: 0.49996045}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_6
@@ -190,6 +205,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_7
@@ -203,6 +219,7 @@ TextureImporter:
       pivot: {x: 0.49608, y: 0.48753607}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_8
@@ -216,6 +233,7 @@ TextureImporter:
       pivot: {x: 0.49761042, y: 0.4952754}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_9
@@ -229,6 +247,7 @@ TextureImporter:
       pivot: {x: 0.49164176, y: 0.49599355}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_10
@@ -242,6 +261,7 @@ TextureImporter:
       pivot: {x: 0.5016154, y: 0.49255115}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_11
@@ -255,6 +275,7 @@ TextureImporter:
       pivot: {x: 0.502509, y: 0.4956522}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_12
@@ -268,6 +289,7 @@ TextureImporter:
       pivot: {x: 0.50087184, y: 0.49796474}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_13
@@ -281,6 +303,7 @@ TextureImporter:
       pivot: {x: 0.48587576, y: 0.52466506}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_14
@@ -294,6 +317,7 @@ TextureImporter:
       pivot: {x: 0.5249707, y: 0.4917781}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_15
@@ -307,6 +331,7 @@ TextureImporter:
       pivot: {x: 0.498833, y: 0.4941959}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_16
@@ -320,6 +345,7 @@ TextureImporter:
       pivot: {x: 0.4971116, y: 0.49446696}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_17
@@ -333,6 +359,7 @@ TextureImporter:
       pivot: {x: 0.5024128, y: 0.49436465}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_18
@@ -346,6 +373,7 @@ TextureImporter:
       pivot: {x: 0.5027801, y: 0.49328455}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_19
@@ -359,6 +387,7 @@ TextureImporter:
       pivot: {x: 0.49626946, y: 0.49589235}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_20
@@ -372,6 +401,7 @@ TextureImporter:
       pivot: {x: 0.5010342, y: 0.4972767}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_21
@@ -385,6 +415,7 @@ TextureImporter:
       pivot: {x: 0.50141346, y: 0.49861476}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: final boss_22
@@ -398,9 +429,11 @@ TextureImporter:
       pivot: {x: 0.50143385, y: 0.4960664}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     outline: []
+    physicsShape: []
   spritePackingTag: 
-  userData: 98128408376341
+  userData: 99203402657721
   assetBundleName: 
   assetBundleVariant: 

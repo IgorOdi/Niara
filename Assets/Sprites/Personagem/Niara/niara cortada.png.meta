@@ -55,6 +55,7 @@ TextureImporter:
     21300096: cara neutra
     21300098: cara kitty
     21300100: angry kitten
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -63,6 +64,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -78,10 +81,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: -1
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -103,6 +109,7 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -111,6 +118,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -132,6 +140,7 @@ TextureImporter:
       pivot: {x: 0.5079847, y: 0.49577782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_1
@@ -145,6 +154,7 @@ TextureImporter:
       pivot: {x: 0.5052523, y: 0.511286}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_2
@@ -158,6 +168,7 @@ TextureImporter:
       pivot: {x: 0.497734, y: 0.497909}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_3
@@ -171,6 +182,7 @@ TextureImporter:
       pivot: {x: 0.51460135, y: 0.49579287}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_4
@@ -184,6 +196,7 @@ TextureImporter:
       pivot: {x: 0.48170704, y: 0.5017527}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_5
@@ -197,6 +210,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_6
@@ -210,6 +224,7 @@ TextureImporter:
       pivot: {x: 0.48965847, y: 0.49573013}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_7
@@ -223,6 +238,7 @@ TextureImporter:
       pivot: {x: 0.5031402, y: 0.49703592}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_8
@@ -236,6 +252,7 @@ TextureImporter:
       pivot: {x: 0.511603, y: 0.5133795}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_9
@@ -249,6 +266,7 @@ TextureImporter:
       pivot: {x: 0.50183904, y: 0.4951908}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_10
@@ -262,6 +280,7 @@ TextureImporter:
       pivot: {x: 0.5045295, y: 0.5104265}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_11
@@ -275,6 +294,7 @@ TextureImporter:
       pivot: {x: 0.49002132, y: 0.49392006}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_12
@@ -288,6 +308,7 @@ TextureImporter:
       pivot: {x: 0.48623094, y: 0.49455753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_13
@@ -301,6 +322,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_14
@@ -314,6 +336,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_15
@@ -327,6 +350,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_16
@@ -340,6 +364,7 @@ TextureImporter:
       pivot: {x: 0.49443626, y: 0.49001446}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_17
@@ -353,6 +378,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_18
@@ -366,6 +392,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_19
@@ -379,6 +406,7 @@ TextureImporter:
       pivot: {x: 0.5056857, y: 0.49346706}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_20
@@ -392,6 +420,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_21
@@ -405,6 +434,7 @@ TextureImporter:
       pivot: {x: 0.4927435, y: 0.49960655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_22
@@ -418,6 +448,7 @@ TextureImporter:
       pivot: {x: 0.5051975, y: 0.5015526}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_23
@@ -431,6 +462,7 @@ TextureImporter:
       pivot: {x: 0.48508358, y: 0.5051355}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_24
@@ -444,6 +476,7 @@ TextureImporter:
       pivot: {x: 0.49227422, y: 0.48708484}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_25
@@ -457,6 +490,7 @@ TextureImporter:
       pivot: {x: 0.49167946, y: 0.48983064}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_26
@@ -470,6 +504,7 @@ TextureImporter:
       pivot: {x: 0.50308305, y: 0.50009185}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_27
@@ -483,6 +518,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_28
@@ -496,6 +532,7 @@ TextureImporter:
       pivot: {x: 0.4909819, y: 0.4912181}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_29
@@ -509,6 +546,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_30
@@ -522,6 +560,7 @@ TextureImporter:
       pivot: {x: 0.49674135, y: 0.50759006}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_31
@@ -535,6 +574,7 @@ TextureImporter:
       pivot: {x: 0.5061931, y: 0.4963852}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_32
@@ -548,6 +588,7 @@ TextureImporter:
       pivot: {x: 0.4984543, y: 0.50471985}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_33
@@ -561,6 +602,7 @@ TextureImporter:
       pivot: {x: 0.49555194, y: 0.48994213}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_34
@@ -574,6 +616,7 @@ TextureImporter:
       pivot: {x: 0.495551, y: 0.4943522}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_35
@@ -587,6 +630,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.50199604}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_36
@@ -600,6 +644,7 @@ TextureImporter:
       pivot: {x: 0.52043605, y: 0.48673886}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_37
@@ -613,6 +658,7 @@ TextureImporter:
       pivot: {x: 0.50075364, y: 0.5028464}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_38
@@ -626,6 +672,7 @@ TextureImporter:
       pivot: {x: 0.49555194, y: 0.49006894}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_39
@@ -639,6 +686,7 @@ TextureImporter:
       pivot: {x: 0.495551, y: 0.49007526}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_40
@@ -652,6 +700,7 @@ TextureImporter:
       pivot: {x: 0.49999723, y: 0.5018364}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_41
@@ -665,6 +714,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_42
@@ -678,6 +728,7 @@ TextureImporter:
       pivot: {x: 0.5119406, y: 0.49701834}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_43
@@ -691,6 +742,7 @@ TextureImporter:
       pivot: {x: 0.48017642, y: 0.4901909}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_44
@@ -704,6 +756,7 @@ TextureImporter:
       pivot: {x: 0.49659103, y: 0.5005064}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_45
@@ -717,6 +770,7 @@ TextureImporter:
       pivot: {x: 0.5693656, y: 0.8441808}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_46
@@ -730,6 +784,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: niara cortada_47
@@ -743,6 +798,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: cara neutra
@@ -756,6 +812,7 @@ TextureImporter:
       pivot: {x: 0.4607895, y: 0.61035}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: cara kitty
@@ -769,6 +826,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: angry kitten
@@ -782,9 +840,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     outline: []
+    physicsShape: []
   spritePackingTag: 
-  userData: 98128409468062
+  userData: 99203403720740
   assetBundleName: 
   assetBundleVariant: 

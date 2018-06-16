@@ -23,6 +23,7 @@ TextureImporter:
     21300032: fabricante_16
     21300034: fabricante_17
     21300036: fabricante_18
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -31,6 +32,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -46,10 +49,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: -1
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -71,6 +77,7 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -79,6 +86,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -87,6 +95,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: WebGL
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -108,6 +117,7 @@ TextureImporter:
       pivot: {x: 0.49940088, y: 0.49807793}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_1
@@ -121,6 +131,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_2
@@ -134,6 +145,7 @@ TextureImporter:
       pivot: {x: 0.4980313, y: 0.498733}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_3
@@ -147,6 +159,7 @@ TextureImporter:
       pivot: {x: 0.4991147, y: 0.49875268}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_4
@@ -160,6 +173,7 @@ TextureImporter:
       pivot: {x: 0.49903253, y: 0.49480623}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_5
@@ -173,6 +187,7 @@ TextureImporter:
       pivot: {x: 0.49918056, y: 0.4977015}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_6
@@ -186,6 +201,7 @@ TextureImporter:
       pivot: {x: 0.49984938, y: 0.4986326}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_7
@@ -199,6 +215,7 @@ TextureImporter:
       pivot: {x: 0.49766606, y: 0.4985224}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_8
@@ -212,6 +229,7 @@ TextureImporter:
       pivot: {x: 0.4939842, y: 0.49778914}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_9
@@ -225,6 +243,7 @@ TextureImporter:
       pivot: {x: 0.49320042, y: 0.4982452}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_10
@@ -238,6 +257,7 @@ TextureImporter:
       pivot: {x: 0.49865952, y: 0.49709088}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_11
@@ -251,6 +271,7 @@ TextureImporter:
       pivot: {x: 0.49683565, y: 0.49725816}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_12
@@ -264,6 +285,7 @@ TextureImporter:
       pivot: {x: 0.49679765, y: 0.49840334}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_13
@@ -277,6 +299,7 @@ TextureImporter:
       pivot: {x: 0.4956676, y: 0.49558625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_14
@@ -290,6 +313,7 @@ TextureImporter:
       pivot: {x: 0.49665454, y: 0.4955863}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_15
@@ -303,6 +327,7 @@ TextureImporter:
       pivot: {x: 0.4973104, y: 0.495524}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_16
@@ -316,6 +341,7 @@ TextureImporter:
       pivot: {x: 0.49911696, y: 0.49758664}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_17
@@ -329,6 +355,7 @@ TextureImporter:
       pivot: {x: 0.49822983, y: 0.4933222}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: fabricante_18
@@ -342,9 +369,11 @@ TextureImporter:
       pivot: {x: 0.49335843, y: 0.4933222}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     outline: []
+    physicsShape: []
   spritePackingTag: 
-  userData: 98128409732494
+  userData: 99203403945605
   assetBundleName: 
   assetBundleVariant: 

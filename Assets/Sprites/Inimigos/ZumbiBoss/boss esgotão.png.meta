@@ -19,6 +19,7 @@ TextureImporter:
     21300024: "boss esgot\xE3o_12"
     21300026: "boss esgot\xE3o_13"
     21300028: "boss esgot\xE3o_14"
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -27,6 +28,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -42,10 +45,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: -1
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -67,6 +73,7 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -75,6 +82,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -83,6 +91,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: WebGL
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -104,6 +113,7 @@ TextureImporter:
       pivot: {x: 0.49784362, y: 0.4990322}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_1"
@@ -117,6 +127,7 @@ TextureImporter:
       pivot: {x: 0.4991446, y: 0.49824858}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_2"
@@ -130,6 +141,7 @@ TextureImporter:
       pivot: {x: 0.50263363, y: 0.504172}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_3"
@@ -143,6 +155,7 @@ TextureImporter:
       pivot: {x: 0.49907875, y: 0.4990798}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_4"
@@ -156,6 +169,7 @@ TextureImporter:
       pivot: {x: 0.49732292, y: 0.49403447}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_5"
@@ -169,6 +183,7 @@ TextureImporter:
       pivot: {x: 0.4981262, y: 0.49455026}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_6"
@@ -182,6 +197,7 @@ TextureImporter:
       pivot: {x: 0.49555653, y: 0.49337345}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_7"
@@ -195,6 +211,7 @@ TextureImporter:
       pivot: {x: 0.4991919, y: 0.4976077}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_8"
@@ -208,6 +225,7 @@ TextureImporter:
       pivot: {x: 0.4949084, y: 0.49668622}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_9"
@@ -221,6 +239,7 @@ TextureImporter:
       pivot: {x: 0.49849823, y: 0.4984159}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_10"
@@ -234,6 +253,7 @@ TextureImporter:
       pivot: {x: 0.49703193, y: 0.4982381}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_11"
@@ -247,6 +267,7 @@ TextureImporter:
       pivot: {x: 0.4982372, y: 0.49848005}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_12"
@@ -260,6 +281,7 @@ TextureImporter:
       pivot: {x: 0.494686, y: 0.49801305}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_13"
@@ -273,6 +295,7 @@ TextureImporter:
       pivot: {x: 0.49575344, y: 0.496461}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss esgot\xE3o_14"
@@ -286,9 +309,11 @@ TextureImporter:
       pivot: {x: 0.49115655, y: 0.496461}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     outline: []
+    physicsShape: []
   spritePackingTag: 
-  userData: 98128408832757
+  userData: 99203403036497
   assetBundleName: 
   assetBundleVariant: 

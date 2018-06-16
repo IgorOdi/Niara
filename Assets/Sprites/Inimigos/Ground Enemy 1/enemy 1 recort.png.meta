@@ -11,6 +11,7 @@ TextureImporter:
     21300008: enemy 1 recorte_4
     21300010: enemy 1 recorte_5
     21300012: enemy 1 recorte_6
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -19,6 +20,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -34,10 +37,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: -1
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -59,6 +65,7 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -67,6 +74,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -88,6 +96,7 @@ TextureImporter:
       pivot: {x: 0.49894753, y: 0.50035655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy 1 recorte_1
@@ -101,6 +110,7 @@ TextureImporter:
       pivot: {x: 0.49785656, y: 0.49597207}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy 1 recorte_2
@@ -114,6 +124,7 @@ TextureImporter:
       pivot: {x: 0.5008839, y: 0.49907318}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy 1 recorte_3
@@ -127,6 +138,7 @@ TextureImporter:
       pivot: {x: 0.5044957, y: 0.49294686}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy 1 recorte_4
@@ -140,6 +152,7 @@ TextureImporter:
       pivot: {x: 0.50255513, y: 0.5030835}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy 1 recorte_5
@@ -153,6 +166,7 @@ TextureImporter:
       pivot: {x: 0.4512118, y: 0.5224886}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy 1 recorte_6
@@ -166,9 +180,11 @@ TextureImporter:
       pivot: {x: 0.45463765, y: 0.52548826}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     outline: []
+    physicsShape: []
   spritePackingTag: 
-  userData: 98128409957191
+  userData: 99203404146897
   assetBundleName: 
   assetBundleVariant: 

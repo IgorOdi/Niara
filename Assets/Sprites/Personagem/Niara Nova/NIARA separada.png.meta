@@ -31,6 +31,7 @@ TextureImporter:
     21300048: NIARA separada_41
     21300050: NIARA separada_42
     21300052: NIARA separada_43
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -39,6 +40,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -54,10 +57,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: -1
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -79,6 +85,7 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -87,6 +94,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -95,6 +103,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: WebGL
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -116,6 +125,7 @@ TextureImporter:
       pivot: {x: 0.50118667, y: 0.4997002}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_1
@@ -129,6 +139,7 @@ TextureImporter:
       pivot: {x: 0.505737, y: 0.502619}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_6
@@ -142,6 +153,7 @@ TextureImporter:
       pivot: {x: 0.51506656, y: 0.50137615}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_7
@@ -155,6 +167,7 @@ TextureImporter:
       pivot: {x: 0.49937382, y: 0.5123044}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_10
@@ -168,6 +181,7 @@ TextureImporter:
       pivot: {x: 0.50188243, y: 0.4999353}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_11
@@ -181,6 +195,7 @@ TextureImporter:
       pivot: {x: 0.50205284, y: 0.4613996}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_13
@@ -194,6 +209,7 @@ TextureImporter:
       pivot: {x: 0.50421846, y: 0.49981672}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_15
@@ -207,6 +223,7 @@ TextureImporter:
       pivot: {x: 0.5001252, y: 0.4999669}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_16
@@ -220,6 +237,7 @@ TextureImporter:
       pivot: {x: 0.5024139, y: 0.5015684}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_17
@@ -233,6 +251,7 @@ TextureImporter:
       pivot: {x: 0.50205284, y: 0.49704248}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_21
@@ -246,6 +265,7 @@ TextureImporter:
       pivot: {x: 0.4956423, y: 0.49715465}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_22
@@ -259,6 +279,7 @@ TextureImporter:
       pivot: {x: 0.49823236, y: 0.497564}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_24
@@ -272,6 +293,7 @@ TextureImporter:
       pivot: {x: 0.49342054, y: 0.5013141}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_25
@@ -285,6 +307,7 @@ TextureImporter:
       pivot: {x: 0.5008749, y: 0.5010412}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_27
@@ -298,6 +321,7 @@ TextureImporter:
       pivot: {x: 0.50297153, y: 0.4962723}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_28
@@ -311,6 +335,7 @@ TextureImporter:
       pivot: {x: 0.49969625, y: 0.49794057}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_31
@@ -324,6 +349,7 @@ TextureImporter:
       pivot: {x: 0.50083196, y: 0.5001848}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_32
@@ -337,6 +363,7 @@ TextureImporter:
       pivot: {x: 0.49268425, y: 0.49371704}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_34
@@ -350,6 +377,7 @@ TextureImporter:
       pivot: {x: 0.4974422, y: 0.5028082}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_36
@@ -363,6 +391,7 @@ TextureImporter:
       pivot: {x: 0.50166374, y: 0.49909025}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_37
@@ -376,6 +405,7 @@ TextureImporter:
       pivot: {x: 0.5005232, y: 0.5037865}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_38
@@ -389,6 +419,7 @@ TextureImporter:
       pivot: {x: 0.50164646, y: 0.5006442}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_39
@@ -402,6 +433,7 @@ TextureImporter:
       pivot: {x: 0.49980634, y: 0.49946734}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_40
@@ -415,6 +447,7 @@ TextureImporter:
       pivot: {x: 0.5005168, y: 0.49868783}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_41
@@ -428,6 +461,7 @@ TextureImporter:
       pivot: {x: 0.49475864, y: 0.49470645}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_42
@@ -441,6 +475,7 @@ TextureImporter:
       pivot: {x: 0.4886863, y: 0.49477994}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: NIARA separada_43
@@ -454,9 +489,11 @@ TextureImporter:
       pivot: {x: 0.49664444, y: 0.49241635}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     outline: []
+    physicsShape: []
   spritePackingTag: 
-  userData: 98128410540484
+  userData: 99203404758273
   assetBundleName: 
   assetBundleVariant: 

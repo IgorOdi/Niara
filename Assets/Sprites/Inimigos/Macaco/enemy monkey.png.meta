@@ -18,6 +18,7 @@ TextureImporter:
     21300022: enemy monkey_11
     21300024: enemy monkey_12
     21300026: enemy monkey_13
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -26,6 +27,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -41,10 +44,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: -1
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -66,6 +72,7 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -74,6 +81,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -82,6 +90,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: iPhone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -90,6 +99,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: tvOS
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -98,6 +108,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: Android
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -106,6 +117,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: WebGL
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -114,6 +126,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: Samsung TV
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -135,6 +148,7 @@ TextureImporter:
       pivot: {x: 0.49939907, y: 0.5012292}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_1
@@ -148,6 +162,7 @@ TextureImporter:
       pivot: {x: 0.5008665, y: 0.49982157}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_2
@@ -161,6 +176,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_3
@@ -174,6 +190,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_4
@@ -187,6 +204,7 @@ TextureImporter:
       pivot: {x: 0.5037195, y: 0.5055167}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_5
@@ -200,6 +218,7 @@ TextureImporter:
       pivot: {x: 0.4963499, y: 0.50100195}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_6
@@ -213,6 +232,7 @@ TextureImporter:
       pivot: {x: 0.5015982, y: 0.49896252}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_7
@@ -226,6 +246,7 @@ TextureImporter:
       pivot: {x: 0.49877402, y: 0.49898487}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_8
@@ -239,6 +260,7 @@ TextureImporter:
       pivot: {x: 0.49546856, y: 0.50093365}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_9
@@ -252,6 +274,7 @@ TextureImporter:
       pivot: {x: 0.5016639, y: 0.38621923}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_10
@@ -265,6 +288,7 @@ TextureImporter:
       pivot: {x: 0.5005172, y: 0.49552706}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_11
@@ -278,6 +302,7 @@ TextureImporter:
       pivot: {x: 0.5039334, y: 0.50140685}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_12
@@ -291,6 +316,7 @@ TextureImporter:
       pivot: {x: 0.49711367, y: 0.49722344}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: enemy monkey_13
@@ -304,9 +330,11 @@ TextureImporter:
       pivot: {x: 0.4960622, y: 0.4996797}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     outline: []
+    physicsShape: []
   spritePackingTag: 
-  userData: 98128410208009
+  userData: 99203404501309
   assetBundleName: 
   assetBundleVariant: 

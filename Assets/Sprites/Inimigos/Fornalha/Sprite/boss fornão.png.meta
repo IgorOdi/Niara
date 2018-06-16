@@ -23,6 +23,7 @@ TextureImporter:
     21300032: "boss forn\xE3o_16"
     21300034: "boss forn\xE3o_17"
     21300036: "boss forn\xE3o_18"
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -31,6 +32,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -46,10 +49,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: -1
     mipBias: -1
-    wrapMode: -1
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -71,6 +77,7 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -79,6 +86,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -87,6 +95,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: WebGL
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -108,6 +117,7 @@ TextureImporter:
       pivot: {x: 0.4974411, y: 0.49691454}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_1"
@@ -121,6 +131,7 @@ TextureImporter:
       pivot: {x: 0.49347308, y: 0.49984404}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_2"
@@ -134,6 +145,7 @@ TextureImporter:
       pivot: {x: 0.49872506, y: 0.4984265}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_3"
@@ -147,6 +159,7 @@ TextureImporter:
       pivot: {x: 0.49784833, y: 0.49763495}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_4"
@@ -160,6 +173,7 @@ TextureImporter:
       pivot: {x: 0.49256626, y: 0.4974535}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_5"
@@ -173,6 +187,7 @@ TextureImporter:
       pivot: {x: 0.49892417, y: 0.4989779}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_6"
@@ -186,6 +201,7 @@ TextureImporter:
       pivot: {x: 0.48695654, y: 0.49808848}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_7"
@@ -199,6 +215,7 @@ TextureImporter:
       pivot: {x: 0.49205524, y: 0.49742827}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_8"
@@ -212,6 +229,7 @@ TextureImporter:
       pivot: {x: 0.49205253, y: 0.49857908}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_9"
@@ -225,6 +243,7 @@ TextureImporter:
       pivot: {x: 0.49639422, y: 0.49723926}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_10"
@@ -238,6 +257,7 @@ TextureImporter:
       pivot: {x: 0.49547634, y: 0.49675226}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_11"
@@ -251,6 +271,7 @@ TextureImporter:
       pivot: {x: 0.49507016, y: 0.49208978}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_12"
@@ -264,6 +285,7 @@ TextureImporter:
       pivot: {x: 0.49328092, y: 0.4953228}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_13"
@@ -277,6 +299,7 @@ TextureImporter:
       pivot: {x: 0.4950994, y: 0.4969153}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_14"
@@ -290,6 +313,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_15"
@@ -303,6 +327,7 @@ TextureImporter:
       pivot: {x: 0.49869794, y: 0.4965983}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_16"
@@ -316,6 +341,7 @@ TextureImporter:
       pivot: {x: 0.49598444, y: 0.49476534}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_17"
@@ -329,6 +355,7 @@ TextureImporter:
       pivot: {x: 0.4985098, y: 0.49583697}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: "boss forn\xE3o_18"
@@ -342,9 +369,11 @@ TextureImporter:
       pivot: {x: 0.49434307, y: 0.49418518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      physicsShape: []
       tessellationDetail: 0
     outline: []
+    physicsShape: []
   spritePackingTag: 
-  userData: 98128408638240
+  userData: 99203402874546
   assetBundleName: 
   assetBundleVariant: 
