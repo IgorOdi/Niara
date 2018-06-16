@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: Base
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: Bones/Corpo
+    localPosition: {x: 0.37899017, y: -1.3981794, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.80080193, w: 0.5989293}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/PernaDireita
+    localPosition: {x: -0.3826622, y: -0.98384273, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9105937, w: -0.41330293}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/PernaDireita/PeDireito
+    localPosition: {x: 0.84777075, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.3063314, w: 0.9519249}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/PernaEsquerda
+    localPosition: {x: 0.20219778, y: 0.60711, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9066295, w: -0.4219278}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/PernaEsquerda/PeEsquerdo
+    localPosition: {x: 0.9039981, y: -0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.29314002, w: 0.9560695}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/Peito
+    localPosition: {x: 1.0478802, y: -0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.02267186, w: 0.999743}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/Peito/Cabeca
+    localPosition: {x: 1.6977994, y: -0.000000018968422, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.0725031, w: 0.9973682}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroDireito
+    localPosition: {x: 2.595221, y: -2.1017618, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9880566, w: 0.15409154}
+    localScale: {x: 1.1517173, y: 1.151717, z: 1.151717}
+  - path: Bones/Corpo/OmbroDireito/BracoDireito
+    localPosition: {x: 1.1870692, y: -0.00000020701142, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.10450005, w: 0.99452496}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroDireito/BracoDireito/MaoDireita
+    localPosition: {x: 1.4131172, y: -0.0000002924353, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.23526713, w: 0.9719308}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroEsquerdo
+    localPosition: {x: 3.5915704, y: 1.4459705, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9290646, w: -0.36991772}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroEsquerdo/BracoEsquerdo
+    localPosition: {x: 1.2202787, y: -0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.056076664, w: 0.99842644}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroEsquerdo/BracoEsquerdo/MaoEsquerda
+    localPosition: {x: 1.4401727, y: 0.00000020826701, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.1909136, w: 0.98160684}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroEsquerdo/BracoEsquerdo/MaoEsquerda2
+    localPosition: {x: 1.4401727, y: 0.00000020826701, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.1909136, w: 0.9816069}
+    localScale: {x: 1.0000011, y: 1.0000011, z: 1}

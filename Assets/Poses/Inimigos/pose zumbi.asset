@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: pose zumbi
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: Anima/Bones/corpo1
+    localPosition: {x: -0.41438484, y: -1.910778, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.8862074, w: 0.4632887}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Anima/Bones/corpo1/corpo2
+    localPosition: {x: 0.5975094, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.09919873, w: 0.99506766}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Anima/Bones/corpo1/corpo2/head
+    localPosition: {x: 0.6854284, y: 0.000000006519258, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.37493685, w: 0.9270504}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Anima/Bones/corpo1/corpo2/braco d
+    localPosition: {x: 0.12579879, y: -0.5115448, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.9931028, w: -0.117247134}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Anima/Bones/corpo1/corpo2/braco d/mao d
+    localPosition: {x: 0.75204027, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.22811043, w: 0.97363526}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Anima/Bones/corpo1/corpo2/Braco e
+    localPosition: {x: 0.6224235, y: 0.21582516, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.55119425, w: -0.83437705}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Anima/Bones/corpo1/corpo2/Braco e/mao e
+    localPosition: {x: 0.87626934, y: 0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.31974173, w: 0.9475047}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Anima/Bones/corpo1/Perna d
+    localPosition: {x: -0.03475204, y: -0.22574031, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9714958, w: -0.23705687}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Anima/Bones/corpo1/Perna d/Pe D
+    localPosition: {x: 0.62290215, y: -0.0000000037252903, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.03303208, w: 0.9994543}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Anima/Bones/corpo1/Perna e
+    localPosition: {x: 0.1244926, y: 0.2370295, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.7812748, w: -0.62418723}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Anima/Bones/corpo1/Perna e/Pe E
+    localPosition: {x: 0.6612154, y: -0.000000014901161, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.36091432, w: 0.932599}
+    localScale: {x: 1, y: 1, z: 1}

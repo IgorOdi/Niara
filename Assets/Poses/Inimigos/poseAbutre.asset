@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: poseAbutre
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: Bones/Corpo
+    localPosition: {x: 0.9774933, y: -2.1426868, z: 0}
+    localRotation: {x: -0, y: 0, z: -0.7592465, w: -0.6508032}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/AsaE
+    localPosition: {x: 0.9746427, y: 0.15498358, z: 0}
+    localRotation: {x: 0, y: -0, z: 0.15143318, w: -0.9884675}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/AsaD
+    localPosition: {x: 0.3456465, y: -0.31331775, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.68941104, w: 0.7243704}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/PeE
+    localPosition: {x: 0.15257114, y: 0.42759198, z: 0}
+    localRotation: {x: -0, y: 0, z: -0.8562041, w: -0.51663786}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/PeD
+    localPosition: {x: -0.13046145, y: -0.19621412, z: 0}
+    localRotation: {x: -0, y: 0, z: -0.8496628, w: -0.5273265}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/Neck1
+    localPosition: {x: 0.87510705, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.09820087, w: 0.9951666}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/Neck1/Neck2
+    localPosition: {x: 0.42555428, y: 9.313226e-10, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.1862874, w: 0.9824953}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/Neck1/Neck2/Neck3
+    localPosition: {x: 0.37155613, y: -0.00000087344233, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.1562448, w: 0.98771834}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/Neck1/Neck2/Neck3/Neck4
+    localPosition: {x: 0.4762587, y: 9.95783e-10, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.13883302, w: 0.99031585}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/Neck1/Neck2/Neck3/Neck4/bico
+    localPosition: {x: 0.71281743, y: 0.29529768, z: 0}
+    localRotation: {x: -0, y: 0, z: -0.55609304, w: -0.83112013}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/Neck1/Neck2/Neck3/Neck4/Head
+    localPosition: {x: 0.51757574, y: -0.0000000045474735, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.1572187, w: 0.9875638}
+    localScale: {x: 1, y: 1, z: 1}

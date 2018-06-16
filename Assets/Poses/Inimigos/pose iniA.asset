@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: pose iniA
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: Bones/central
+    localPosition: {x: -2.8939896, y: 2.8939905, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.72147816, w: 0.69243723}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/boca
+    localPosition: {x: -5.0580378, y: -0.51498306, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.761761, w: -0.64785826}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/serra
+    localPosition: {x: -2.6691742, y: 6.4974966, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.99996734, w: -0.008088827}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/roda frente
+    localPosition: {x: 0, y: 0, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.72147816, w: 0.69243723}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/roda tras
+    localPosition: {x: -5.8119345, y: 0.174294, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.72147816, w: 0.69243723}
+    localScale: {x: 1, y: 1, z: 1}

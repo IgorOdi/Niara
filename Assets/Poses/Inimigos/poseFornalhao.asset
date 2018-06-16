@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: poseFornalhao
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: Bones/Corpo
+    localPosition: {x: -4.114971, y: -15.565032, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.7182034, w: 0.69583327}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/Chamine
+    localPosition: {x: 4.9077845, y: -0.037302494, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.0055060983, w: 0.99998486}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroD
+    localPosition: {x: 4.251767, y: -2.74401, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.96299434, w: 0.2695218}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroD/BracoD
+    localPosition: {x: 1.2188979, y: 0.0000006556511, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.082601145, w: 0.99658275}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroD/BracoD/MaoD
+    localPosition: {x: 1.5757753, y: 5.857146e-10, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.71943384, w: 0.694561}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroD/BracoD/MaoD/Fogo
+    localPosition: {x: 4.330784, y: 0.03304243, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.8042027, w: -0.59435517}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroE
+    localPosition: {x: 3.9887812, y: 2.3961403, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9978097, w: -0.0661506}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroE/BracoE
+    localPosition: {x: 1.3530282, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.20428023, w: 0.9789125}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroE/BracoE/MaoE
+    localPosition: {x: 1.3947842, y: 0.0000010319054, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.42379156, w: 0.9057598}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/OmbroE/BracoE/MaoE/Serra
+    localPosition: {x: 2.9715133, y: -0.17507839, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.9973588, w: 0.07263268}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/PernaE
+    localPosition: {x: -0.014804594, y: 0.5709947, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.89438057, w: -0.44730678}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/PernaE/PeE
+    localPosition: {x: 1.1573446, y: 0.00000023841858, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.3472671, w: 0.9377663}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/PernaD
+    localPosition: {x: -0.038540814, y: -1.079838, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9796988, w: -0.20047528}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Bones/Corpo/PernaD/PeD
+    localPosition: {x: 1.1282264, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.19392632, w: 0.9810161}
+    localScale: {x: 1, y: 1, z: 1}

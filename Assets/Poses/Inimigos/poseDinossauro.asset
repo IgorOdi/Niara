@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: poseDinossauro
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: anima/bones/Base
+    localPosition: {x: -0.3386402, y: -12.827541, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.688602, w: 0.7251395}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso
+    localPosition: {x: 2.2918131, y: -0.05103326, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.0058487356, w: 0.99998295}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp
+    localPosition: {x: 5.51033, y: -0.00000047683716, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.5192991, w: 0.85459256}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/NeckBase
+    localPosition: {x: 4.106845, y: -0.00000023841858, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.060580797, w: 0.9981633}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/NeckBase/NeckMid
+    localPosition: {x: 1.6939341, y: 0.00000089243986, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.003972904, w: 0.99999213}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/NeckBase/NeckMid/NeckTOP
+    localPosition: {x: 1.1772829, y: 0.0000000010007568, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.011652104, w: 0.9999321}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/NeckBase/NeckMid/NeckTOP/Head
+    localPosition: {x: 1.0280238, y: 0.0000000062209438, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.29162338, w: 0.95653325}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/NeckBase/NeckMid/NeckTOP/Head/HatBase
+    localPosition: {x: 4.923615, y: -0.00000017136335, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.14702609, w: 0.98913264}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/NeckBase/NeckMid/NeckTOP/Head/HatBase/HatTop
+    localPosition: {x: 1.3385662, y: 0.0000031683594, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.004993569, w: 0.99998754}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/NeckBase/NeckMid/NeckTOP/Head/Jaw
+    localPosition: {x: 1.1214634, y: -1.4616712, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.74019057, w: -0.67239714}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/NeckBase/NeckMid/NeckTOP/Head/EyebrowR
+    localPosition: {x: 4.601923, y: 0.06563681, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.67112094, w: 0.7413479}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/NeckBase/NeckMid/NeckTOP/Head/EyebrowL
+    localPosition: {x: 4.9864225, y: 1.365353, z: 0}
+    localRotation: {x: -0, y: -0, z: 0.27252463, w: 0.96214885}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/ArmR
+    localPosition: {x: 0.2661319, y: -0.9720957, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.884415, w: -0.4667013}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/ArmR/HandR
+    localPosition: {x: 3.0671625, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.675294, w: 0.7375487}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/ArmL
+    localPosition: {x: 6.4968343, y: 2.3613818, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.6902576, w: 0.7235638}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TorsoUp/ArmL/HandL
+    localPosition: {x: 3.4334333, y: -0.0000014305115, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.44212848, w: 0.89695174}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TailBase
+    localPosition: {x: 6.531576, y: -3.7290006, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.5829659, w: 0.8124966}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TailBase/Tail1
+    localPosition: {x: 2.2596529, y: -0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.12685512, w: 0.9919213}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TailBase/Tail1/Tail2
+    localPosition: {x: 2.477419, y: -0.0000008959323, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.05019048, w: 0.9987397}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: anima/bones/Base/Torso/TailBase/Tail1/Tail2/TailEnd
+    localPosition: {x: 1.8789637, y: -0.0000006745104, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.19941992, w: 0.9799141}
+    localScale: {x: 1, y: 1, z: 1}

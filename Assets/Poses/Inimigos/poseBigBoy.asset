@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: poseBigBoy
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: bones/BUTT
+    localPosition: {x: 1.4544678, y: -0.7185478, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.8075943, w: 0.5897384}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bones/BUTT/Torso
+    localPosition: {x: 1.0601102, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.18726496, w: 0.98230946}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bones/BUTT/Torso/Head
+    localPosition: {x: 1.5810733, y: 0.000000018626451, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.32924265, w: 0.9442454}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bones/BUTT/Torso/ArmR
+    localPosition: {x: 0.06887096, y: -1.6649585, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.9965085, w: -0.08349185}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bones/BUTT/Torso/ArmR/MaoR
+    localPosition: {x: 1.5143183, y: 0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.44341534, w: 0.8963163}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bones/BUTT/Torso/ArmL
+    localPosition: {x: 2.0367537, y: 0.974486, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.94243336, w: -0.33439398}
+    localScale: {x: 0.9999999, y: 0.9999999, z: 1}
+  - path: bones/BUTT/Torso/ArmL/MaoL
+    localPosition: {x: 1.5143183, y: 0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.44341534, w: 0.8963163}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bones/BUTT/LegR
+    localPosition: {x: 0.0073391944, y: -0.5908862, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.9762644, w: -0.21658221}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bones/BUTT/LegR/PeR
+    localPosition: {x: 0.7157372, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.1041546, w: 0.99456114}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: bones/BUTT/LegL
+    localPosition: {x: 0.29507428, y: 0.35038012, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9829126, w: -0.18407276}
+    localScale: {x: 1.0000001, y: 1.0000001, z: 1}
+  - path: bones/BUTT/LegL/PeL
+    localPosition: {x: 0.6738234, y: -0.000000029802319, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.07109996, w: 0.99746925}
+    localScale: {x: 1, y: 1, z: 1}
