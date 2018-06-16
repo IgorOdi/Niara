@@ -9,7 +9,7 @@ public class Chamas : MonoBehaviour {
 	void Awake() {
 	
 		danoBase = 1;
-		Destroy (gameObject, 4f);
+		Destroy (gameObject, 8f);
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {

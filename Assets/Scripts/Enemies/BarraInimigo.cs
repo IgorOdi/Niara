@@ -25,8 +25,7 @@ public class BarraInimigo : MonoBehaviour {
 
     void Update()
     {
-
-        vidaInimigo.fillAmount = enemyScript.vidas / enemyScript.vidasMax;
+		if (vidaInimigo != null) vidaInimigo.fillAmount = enemyScript.vidas / enemyScript.vidasMax;
 
 		if (enemyScript.vidas <= 0 && SceneManager.GetActiveScene ().name != "Z3F1 Boss") {
 			if (!GameManager.sfxStop)

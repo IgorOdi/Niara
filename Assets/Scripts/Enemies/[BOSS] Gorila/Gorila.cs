@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class Gorila : EnemyBehaviour {
 
-	/*
-	- Tremor de tela na habilidade Tremor
-	*/
-
 	private float speed;
 	private float horizontal;
 

@@ -98,12 +98,9 @@ public class GameManager : MonoBehaviour {
 
 		cena = SceneManager.GetActiveScene ();
 
-		print(cena.name);
-
 		zonaFase();
-
-		zonaParam.setValue(zona);
-		faseParam.setValue(fase);
+		if (zonaParam != null) zonaParam.setValue(zona);
+		if (faseParam != null) faseParam.setValue(fase);
 
 		player = GameObject.FindGameObjectWithTag("Player");
 
@@ -113,10 +110,10 @@ public class GameManager : MonoBehaviour {
 			Debug.Log("TÁ NO BOSS IHAAAA");
 		}
 
-		else onBossParam.setValue(0);
+		else if (onBossParam != null) onBossParam.setValue(0);
 
 		if (MainMenu.pararMusica) pararParam.setValue(1f);
-		else pararParam.setValue(0f);
+		else if (pararParam != null) pararParam.setValue(0f);
 
 		if (!pegouHabilidadesIniciais) {
 			StartCoroutine(habilidadesIniciais());

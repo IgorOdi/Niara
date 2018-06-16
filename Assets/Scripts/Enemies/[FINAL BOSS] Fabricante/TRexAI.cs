@@ -175,10 +175,10 @@ public class TRexAI : EnemyBehaviour {
 
 	IEnumerator startKilling() {
 
+		barraInimigo.vidaInimigo = GameObject.Find ("Barra de vida Frente").GetComponent<Image> ();
 		yield return new WaitForSeconds (6f);
 		canStartKilling = true;
-		barraInimigo.vidaInimigo = GameObject.Find ("Barra de vida Frente").GetComponent<Image> ();
-		GameManager.traficanteDeadParam.setValue(1);
+		if (GameManager.traficanteDeadParam != null) GameManager.traficanteDeadParam.setValue(1);
 	}
 
 	void changeState() {
@@ -312,8 +312,6 @@ public class TRexAI : EnemyBehaviour {
 		laserBTime += Time.fixedDeltaTime;
 
 		rotatorB.transform.rotation = Quaternion.Euler (0, 0, f);
-
-
 
 		if (laserBTime > 0 && laserBTime < 1) {
 

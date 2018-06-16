@@ -147,7 +147,7 @@ public class Serrador : EnemyBehaviour {
 		idleTime += Time.fixedDeltaTime;
 		flip ();
 
-		if (idleTime < 2f) {
+		if (idleTime < 1f) {
 
 		} else {
 
@@ -316,7 +316,7 @@ public class Serrador : EnemyBehaviour {
 
 		superIdleTime += Time.fixedDeltaTime;
 
-		if (superIdleTime > 4f) {
+		if (superIdleTime > 2.5f) {
 
 			superIdleTime = 0;
 			currentState = 0;

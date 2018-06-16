@@ -179,7 +179,7 @@ public class TatuStates : EnemyBehaviour {
 
         move = new Vector2(0,0);
 
-		if (idleTime < 2) {
+		if (idleTime < 1) {
 
 			anim.SetTrigger ("Idle");
 		} else {
@@ -194,7 +194,7 @@ public class TatuStates : EnemyBehaviour {
 
         movingTime += Time.deltaTime;
 
-        if (movingTime < 3) {
+        if (movingTime < 2) {
 
 			if (!passosStarted) {
 				passosTatuEv.start ();
@@ -353,7 +353,7 @@ public class TatuStates : EnemyBehaviour {
         superIdleTime += Time.deltaTime;
         move = new Vector2(0, 0);
 
-        if (superIdleTime > 4f) {
+        if (superIdleTime > 3f) {
 
             superIdleTime = 0;
             hittingCount = 0;

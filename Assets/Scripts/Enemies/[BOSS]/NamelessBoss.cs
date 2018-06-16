@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class NamelessBoss : EnemyBehaviour {
 
@@ -46,8 +48,10 @@ public class NamelessBoss : EnemyBehaviour {
 	public string somTeia = "event:/somTeia";
 
 	[FMODUnity.EventRef]
-	public string somPassos = "event:/Passos";
-	public static FMOD.Studio.EventInstance passosAranhaEv;
+	public string somPassos;
+	public EventInstance passosAranhaEv;
+
+	public LayerMask mask;
 
 	void Start () {
 
@@ -58,6 +62,8 @@ public class NamelessBoss : EnemyBehaviour {
 		boss = true;
 		danoBase = 1;
 		currentState = 1;
+
+		passosAranhaEv = RuntimeManager.CreateInstance ("event:/Boss Aranha/aranhao walk loop");
 	}
 
 	void FixedUpdate () {
@@ -97,8 +103,6 @@ public class NamelessBoss : EnemyBehaviour {
 
 			Morte ();
 		}
-
-		passosAranhaEv = FMODUnity.RuntimeManager.CreateInstance (somPassos);
 	}
 
 	void idleState() {
@@ -106,7 +110,7 @@ public class NamelessBoss : EnemyBehaviour {
 		idleTime += Time.fixedDeltaTime;
 		anim.SetTrigger("New Trigger 3");
 
-		if (idleTime >= 4f) {
+		if (idleTime >= 2f) {
 
 			idleTime = 0;
 			currentState = 1;
@@ -167,6 +171,19 @@ public class NamelessBoss : EnemyBehaviour {
 			
 			anim.SetBool ("New Bool 1", true);
             grCollider.SetActive(true);
+
+			if (Physics2D.OverlapCircle (transform.position, 5, mask)) {
+
+				if (PlayerController.vulneravel) { //Se o Player estiver vulneravel:
+
+					PlayerController.recebeDano = true;
+					PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
+					PlayerController.vidas -= danoBase; //Subtrai o dano da habilidade/jogador;
+				}
+
+				PlayerController.recebeKnockBack = true;
+			}
+
         } else {
 			
 			anim.SetTrigger ("New Trigger 3");
@@ -198,20 +215,19 @@ public class NamelessBoss : EnemyBehaviour {
 
 		jumpAttack += Time.fixedDeltaTime;
 
-		if (jumpAttack > 0 && jumpAttack < 2f) {
+		if (jumpAttack > 0 && jumpAttack < 1.5f) {
+				
+		} else if (jumpAttack > 1.5f && jumpAttack < 3f) {
 
 			if (!passou) {
 
 				passosAranhaEv.start ();
 				passou = true;
 			}
-				
-		} else if (jumpAttack > 2f && jumpAttack < 3.5f) {
-
 			anim.SetBool ("New Bool", true);
 
 			rb.AddForce (new Vector2 (30000 * lado, 50));
-		} else if (jumpAttack > 3f) {
+		} else if (jumpAttack > 2.5f) {
 
 			passosAranhaEv.stop (FMOD.Studio.STOP_MODE.IMMEDIATE);
 			passou = false;
@@ -271,6 +287,10 @@ public class NamelessBoss : EnemyBehaviour {
 	void OnDestroy() {
 		
 		passosAranhaEv.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-
 	}
+
+//	void OnDrawGizmos() {
+//
+//		Gizmos.DrawWireSphere (transform.position, 5);
+//	}
 }

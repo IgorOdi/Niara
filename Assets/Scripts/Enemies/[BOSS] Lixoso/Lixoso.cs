@@ -47,6 +47,8 @@ public class Lixoso : EnemyBehaviour {
     [SerializeField]
     private Transform[] dropLixoTransform;
 
+	public SpriteRenderer placa;
+
 	private bool atirou, socou, pulou, idlou;
 
 	[FMODUnity.EventRef]
@@ -165,7 +167,7 @@ public class Lixoso : EnemyBehaviour {
 
 		idleTime += Time.fixedDeltaTime;
 
-		if (idleTime >= 2f) {
+		if (idleTime >= 1f) {
 
 			idlou = false;
 			flip ();
@@ -202,17 +204,20 @@ public class Lixoso : EnemyBehaviour {
 
 		waveTime += Time.fixedDeltaTime;
 
-		if (waveTime >= 1.2f) {
+		if (waveTime >= 1.5f) {
 
 			anim.SetBool ("New Bool 1", false);
 
 			socou = false;
-			Instantiate (lixoWave, waveSpawn.position, waveSpawn.rotation);
+			placa.enabled = false;
+//			Instantiate (lixoWave, waveSpawn.position, waveSpawn.rotation);
 			skillCount++;
 			waveCount++;
 			waveTime = 0;
 			currentState = 0;
 		} else {
+
+			placa.enabled = true;
 
 			if (!socou) {
 
@@ -311,7 +316,6 @@ public class Lixoso : EnemyBehaviour {
     IEnumerator tempoDrop() {
 
         yield return new WaitForSeconds(1f);
-		print ("xd");
 
         for (int i = 0; i < dropLixoTransform.Length; i++) {
             Instantiate(dropLixoObject, dropLixoTransform[i].position, Quaternion.identity);
