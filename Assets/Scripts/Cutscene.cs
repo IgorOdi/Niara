@@ -28,7 +28,7 @@ public class Cutscene : MonoBehaviour {
 			 MainMenu.menuEv.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 			 MainMenu.menuEv.release();
 	         GameManager.hasPlayed = false;
-	         SceneManager.LoadScene("Game Manager");
+	         GameManager.instance.OnChangeScene("Game Manager");
 	    }
 
 		//Vector3 move = new Vector3 (transform.position.x, step, transform.position.z);    // Imagens sem o Lerp (estilo slideshow)

@@ -24,7 +24,7 @@ public class Instrucoes : MonoBehaviour {
 
 
             FMODUnity.RuntimeManager.PlayOneShot(somSetaDown, transform.position);
-            SceneManager.LoadScene("Menu");
+            GameManager.instance.OnChangeScene("Menu");
             
 
         }

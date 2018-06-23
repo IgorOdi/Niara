@@ -188,7 +188,7 @@ public class MainMenu : MonoBehaviour {
 
 			//Vai pro game manager
 			if (GUI.GetNameOfFocusedControl () == botoes [0]) {
-				SceneManager.LoadScene ("Cutscene");
+				GameManager.instance.OnChangeScene ("Cutscene");
 			}
 
 			/*    //Vai pra onde parou
@@ -204,7 +204,7 @@ public class MainMenu : MonoBehaviour {
 			//Vai pra onde parou
 			if (GUI.GetNameOfFocusedControl () == botoes [1] && File.Exists (Application.dataPath + "/gameInfo.pug")) {
 
-				SceneManager.LoadScene ("Fases");
+				GameManager.instance.OnChangeScene ("Fases");
                 
 
 
@@ -215,11 +215,11 @@ public class MainMenu : MonoBehaviour {
 
             //Vai pras instruções
             if (GUI.GetNameOfFocusedControl() == botoes[2])
-                SceneManager.LoadScene("Instrucoes");
+                GameManager.instance.OnChangeScene("Instrucoes");
 
             //Vai pros créditos
             if (GUI.GetNameOfFocusedControl() == botoes[3])
-                SceneManager.LoadScene("Creditos");
+                GameManager.instance.OnChangeScene("Creditos");
 
             
             //Sai do jogo

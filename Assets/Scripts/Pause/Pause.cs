@@ -122,7 +122,7 @@ public class Pause : MonoBehaviour {
             if (GUI.GetNameOfFocusedControl() == botoes[1]){
             	GameManager.bgmEv.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             	MainMenu.musicaJaTocou = false;
-                SceneManager.LoadScene("Menu");
+                GameManager.instance.OnChangeScene("Menu");
             }
 
             if (GUI.GetNameOfFocusedControl() == botoes[2])

@@ -124,7 +124,7 @@ public class RespawnPlayer : MonoBehaviour
 
         // suspend execution for 5 seconds
         yield return new WaitForSeconds(0.7f);
-        SceneManager.LoadScene("Fim");
+        GameManager.instance.OnChangeScene("Fim");
         //this.transform.position = res2.spawnPoints[0].transform.position; //O player vai pra posição do Spawn (Inicio do Jogo)
         // PlayerController.vidas = 5; //E reseta as vidas
 
@@ -136,7 +136,7 @@ public class RespawnPlayer : MonoBehaviour
 
         // suspend execution for 5 seconds
         yield return new WaitForSeconds(0.2f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameManager.instance.OnChangeScene(SceneManager.GetActiveScene().name);
         //this.transform.position = res2.spawnPoints[0].transform.position; //O player vai pra posição do Spawn (Inicio do Jogo)
        // PlayerController.vidas = 5; //E reseta as vidas
 
@@ -144,7 +144,7 @@ public class RespawnPlayer : MonoBehaviour
     */
     public void restartCurrentScene(){
         
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameManager.instance.OnChangeScene(SceneManager.GetActiveScene().name);
         //Debug.Log("funcionou");
     }
 

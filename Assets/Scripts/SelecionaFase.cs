@@ -75,7 +75,7 @@ public class SelecionaFase : MonoBehaviour {
         }
 
         else if (Input.GetButtonDown("Throw")) {
-      		SceneManager.LoadScene("Menu");
+      		GameManager.instance.OnChangeScene("Menu");
         }
 	}
 
@@ -108,13 +108,13 @@ public class SelecionaFase : MonoBehaviour {
     	gm.zonaFase();
 
 
-        if (fase == 0) SceneManager.LoadScene("Z1F1");
-        else if (fase == 1) SceneManager.LoadScene("Z1F2");
-        else if (fase == 2) SceneManager.LoadScene("Z1F3");
-        else if (fase == 3) SceneManager.LoadScene("Z2F1");
-        else if (fase == 4) SceneManager.LoadScene("Z2F2");
-        else if (fase == 5) SceneManager.LoadScene("Z2F3");
-        else if (fase == 6) SceneManager.LoadScene("Z3F1");
+        if (fase == 0) GameManager.instance.OnChangeScene("Z1F1");
+        else if (fase == 1) GameManager.instance.OnChangeScene("Z1F2");
+        else if (fase == 2) GameManager.instance.OnChangeScene("Z1F3");
+        else if (fase == 3) GameManager.instance.OnChangeScene("Z2F1");
+        else if (fase == 4) GameManager.instance.OnChangeScene("Z2F2");
+        else if (fase == 5) GameManager.instance.OnChangeScene("Z2F3");
+        else if (fase == 6) GameManager.instance.OnChangeScene("Z3F1");
 
         //GameManager.hasPlayed = false;
         MainMenu.menuEv.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);

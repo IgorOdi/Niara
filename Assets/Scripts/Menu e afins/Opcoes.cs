@@ -148,7 +148,7 @@ public class Opcoes : MonoBehaviour {
         else if (Event.current.isKey && Event.current.keyCode == KeyCode.X)
         {
 
-            SceneManager.LoadScene("Menu");
+            GameManager.instance.OnChangeScene("Menu");
 
         }
                        

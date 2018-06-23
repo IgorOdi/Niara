@@ -8,7 +8,7 @@ public class PauseVolta : MonoBehaviour {
     // Pausing Game
     public static void PauseGame()
     {
-        SceneManager.LoadScene("Pause", LoadSceneMode.Additive);
+		SceneManager.LoadScene("Pause", LoadSceneMode.Additive);
     }
 
     // Resuming Game

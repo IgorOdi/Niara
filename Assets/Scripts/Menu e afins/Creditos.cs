@@ -33,7 +33,7 @@ public class Creditos : MonoBehaviour {
 		if (Event.current.isKey && Input.GetButtonDown("Throw") && Input.anyKeyDown)
         {
             FMODUnity.RuntimeManager.PlayOneShot(somSetaDown, transform.position);
-            SceneManager.LoadScene("Menu");
+            GameManager.instance.OnChangeScene("Menu");
 
         }
 

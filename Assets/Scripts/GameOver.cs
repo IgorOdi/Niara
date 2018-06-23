@@ -14,7 +14,7 @@ public class GameOver : MonoBehaviour {
 		Coletavel.coletaveis = Coletavel.coletaveis - Coletavel.pegouColetavel;
 		Coletavel.pegouColetavel = 0;
 
-		SceneManager.LoadScene("Z" + GameManager.zona + "F" + GameManager.fase);
+		GameManager.instance.OnChangeScene("Z" + GameManager.zona + "F" + GameManager.fase);
 		PlayerController.hitPlayed = true;
 		FabricanteAI.traficanteIsDead = false;
     }

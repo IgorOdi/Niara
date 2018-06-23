@@ -21,7 +21,7 @@ public class Loader : MonoBehaviour
 		}
 
 		if (!GameManager.shouldLoad || !SelecionaFase.onStageSelect) {
-			SceneManager.LoadScene ("Z1F0");
+			GameManager.instance.OnChangeScene ("Z1F0");
 			GameManager.fase = 0;
 			GameManager.zona = 1;
 	

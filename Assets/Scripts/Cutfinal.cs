@@ -28,7 +28,7 @@ public class Cutfinal : MonoBehaviour {
 			 MainMenu.menuEv.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 			 MainMenu.menuEv.release();
 	         GameManager.hasPlayed = false;
-	         SceneManager.LoadScene("Menu");
+	         GameManager.instance.OnChangeScene("Menu");
 	    }
 
 		//Vector3 move = new Vector3 (transform.position.x, step, transform.position.z);    // Imagens sem o Lerp (estilo slideshow)
