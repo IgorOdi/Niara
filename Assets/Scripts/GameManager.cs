@@ -128,23 +128,26 @@ public class GameManager : MonoBehaviour {
 
 		zonaFase();
 
-		if (zona > 0) {
-			zonaParam.setValue(zona);
-			faseParam.setValue(fase);
-		}
+		if (zonaParam != null) zonaParam.setValue(zona);
+		if (faseParam != null) faseParam.setValue(fase);
 
 		if (cena.name.Contains("Z")) player = GameObject.FindGameObjectWithTag("Player");
 
 
 		if (cena.name == "Z" + zona + "F" + fase + " Boss") {
-			onBossParam.setValue(1);
-			Debug.Log("TÁ NO BOSS IHAAAA");
+			if (onBossParam != null) onBossParam.setValue (1);
+			Debug.Log ("TÁ NO BOSS IHAAAA");
+		} else {
+
+			if (onBossParam != null) onBossParam.setValue (0);
 		}
 
-		else onBossParam.setValue(0);
-
-		if (MainMenu.pararMusica) pararParam.setValue(1f);
-		else pararParam.setValue(0f);
+		if (MainMenu.pararMusica) {
+			if (pararParam != null) pararParam.setValue (1f);
+		} else {
+			
+			if (pararParam != null)pararParam.setValue(0f);
+		}
 
 		if (!pegouHabilidadesIniciais) {
 			StartCoroutine(habilidadesIniciais());
