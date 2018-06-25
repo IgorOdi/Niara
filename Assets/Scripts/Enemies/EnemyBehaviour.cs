@@ -61,7 +61,7 @@ public class EnemyBehaviour : MonoBehaviour { //Código que se aplicará a todos
 		wallLayer = LayerMask.GetMask ("Piso");
 	}
 
-	void Update () {
+	public virtual void Update () {
 
 		vivo = vidas > 0 ? true : false; //O que define se o Inimigo está vivo ou não.
 

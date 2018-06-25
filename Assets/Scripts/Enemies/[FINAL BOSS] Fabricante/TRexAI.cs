@@ -87,7 +87,7 @@ public class TRexAI : EnemyBehaviour {
 	void Start() {
 
 		vivo = true;
-		vidasMax = 200;
+		vidasMax = 125;
 		vidas = vidasMax;
 		vulneravel = true;
 		boss = true;

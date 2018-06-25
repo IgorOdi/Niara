@@ -97,8 +97,7 @@ public class ZumbiTanker : EnemyBehaviour {
 			}
 		} else {
 
-			currentState = 0;
-			spawn();
+			StartCoroutine (preMorte ());
 		}
 	}
 
@@ -171,7 +170,7 @@ public class ZumbiTanker : EnemyBehaviour {
 
 		if (canSpawn) {
 
-			StartCoroutine (spawnEnemy ());
+//			StartCoroutine (spawnEnemy ());
 			canSpawn = false;
 
 			moido.SetActive (true);

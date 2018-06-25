@@ -7,7 +7,6 @@ public class NiaraWeapon : MonoBehaviour {
     private Collider2D arma;
     [SerializeField]
     private GameObject hitFX;
-	[SerializeField]
 	private Transform pontohit;
 
 

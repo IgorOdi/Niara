@@ -410,7 +410,6 @@ public class PlayerController: MonoBehaviour {
 
 		grounded = Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0, groundLayer);
 
-
     	if (grounded) {
 
 			jumpBool = false;

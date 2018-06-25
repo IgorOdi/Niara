@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour {
 
 		if (shouldLoad) {
 
-			Load ();
+//			Load ();
 			shouldLoad = false;
 		}
 
@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour {
 			hasPlayed = true;
 		}
 
-		Load ();
+//		Load ();
 
 		//traficanteDeadParam.setValue(0);
 
@@ -200,7 +200,7 @@ public class GameManager : MonoBehaviour {
 
 		if (shouldLoad) {
 
-			Load ();
+//			Load ();
 			shouldLoad = false;
 		}
 
@@ -381,6 +381,7 @@ public class GameManager : MonoBehaviour {
 
 			oncaAtiva = gameInfo.oncaAtiva;
 			micoAtivo = gameInfo.micoAtivo;
+			print (micoAtivo);
 			araraAtivo = gameInfo.araraAtivo;
 			jabutiAtivo = gameInfo.jabutiAtivo;
 			SelecionaFase.faseDesbloq = gameInfo.faseDebloq;

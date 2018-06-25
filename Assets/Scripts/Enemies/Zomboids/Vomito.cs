@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Vomito : MonoBehaviour {
 
+	public Transform enemy;
+
 	float speed;
 	int dano;
 	float lado;
@@ -16,15 +18,6 @@ public class Vomito : MonoBehaviour {
 		dano = 1;
 		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ();
 		rb = GetComponent<Rigidbody2D> ();
-
-		if (transform.position.x > player.transform.position.x) {
-
-			lado = -1;
-		} else {
-			lado = 1;
-		}
-
-
 			
 		if (transform.position.y > player.transform.position.y + 2) {
 
@@ -39,7 +32,7 @@ public class Vomito : MonoBehaviour {
 
 	void Update() {
 
-		transform.Translate(new Vector3(speed*lado, 0));
+		transform.Translate(new Vector3(speed * -enemy.transform.localScale.x, 0));
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {

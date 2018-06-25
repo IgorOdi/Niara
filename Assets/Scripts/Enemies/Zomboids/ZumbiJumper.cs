@@ -17,6 +17,7 @@ public class ZumbiJumper : EnemyBehaviour {
 
 	[SerializeField]
 	private GameObject moido;
+	private Collider2D _collider;
 
 	[FMODUnity.EventRef]
 	public string somIdle = "event:/Inimigos/idleZumbi";
@@ -25,18 +26,22 @@ public class ZumbiJumper : EnemyBehaviour {
 	void Start() {
 
 		vivo = true;
+		ativo = true;
 		vidas = 2;
 		vulneravel = true;
 		currentState = 0;
 
 		rb.gravityScale = 0;
+		_collider = GetComponent<Collider2D> ();
 
 		anim.SetBool ("New Bool", true);
 
 		idleZumbiEv = FMODUnity.RuntimeManager.CreateInstance (somIdle);
-	}
+	} 
 
-	void FixedUpdate() {
+	public override void Update() {
+
+		base.Update ();
 
 		grounded = Physics2D.OverlapBox (new Vector2(transform.position.x, transform.position.y-0.75f), new Vector2 (1, 1), 0, LayerMask.GetMask("Piso"));
 
@@ -55,7 +60,7 @@ public class ZumbiJumper : EnemyBehaviour {
 			} 
 		} else {
 
-			StartCoroutine (respawnEnemy ());
+			StartCoroutine (preMorte ());
 		}
 	}
 
@@ -66,14 +71,16 @@ public class ZumbiJumper : EnemyBehaviour {
 
 	void idleState() {
 
-		idleTime += Time.fixedDeltaTime;
+		idleTime += Time.deltaTime;
+
+		print (idleTime);
 
 		if (!idlou) {
 
 			idleZumbiEv.start();
 			idlou = true;
 		}
-
+			
 		if (idleTime > 2) {
 
 			if (grounded) {
@@ -86,6 +93,7 @@ public class ZumbiJumper : EnemyBehaviour {
 
 					anim.SetBool ("New Bool", false);
 					rb.gravityScale = 1;
+					_collider.isTrigger = false;
 					idleTime = 0;
 				} else {
 
@@ -130,10 +138,11 @@ public class ZumbiJumper : EnemyBehaviour {
 			GetComponentsInChildren<SkinnedMeshRenderer> () [i].enabled = false;
 		}
 
-		yield return new WaitForSeconds (6f);
+		yield return new WaitForSeconds (10f);
 		vivo = true;
+		ativo = true;
 		vidas = 2;
-		GetComponent<Collider2D> ().enabled = true;
+//		GetComponent<Collider2D> ().enabled = true;
 		rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
 		moido.SetActive (false);
@@ -148,7 +157,7 @@ public class ZumbiJumper : EnemyBehaviour {
 
 		if (other.gameObject.tag == "Player" || other.gameObject.tag == "Chão") {
 
-			GetComponent<Collider2D> ().offset = new Vector2(0, 1f);
+			_collider.offset = new Vector2(0, 1f);
 			anim.SetTrigger ("New Trigger");
 		}
 	}

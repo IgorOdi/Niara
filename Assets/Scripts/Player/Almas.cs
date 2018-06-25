@@ -9,7 +9,7 @@ public class Almas : MonoBehaviour
     public Vector2 posicao;
 
     // Use this for initialization
-    void Awake()
+    void Start()
     {
        posicao = transform.position;
     }

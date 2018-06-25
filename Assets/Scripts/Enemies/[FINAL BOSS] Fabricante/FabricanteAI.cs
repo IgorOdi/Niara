@@ -38,7 +38,7 @@ public class FabricanteAI : EnemyBehaviour {
 	void Start() {
 
 		vivo = true;
-		vidasMax = 10;
+		vidasMax = 6;
 		vidas = vidasMax;
 		vulneravel = true;
 		boss = true;

@@ -52,7 +52,7 @@ public class MonkeyBot : EnemyBehaviour {
 		idleTime += Time.deltaTime;
 		flip ();
 
-		if (idleTime > 2f) {
+		if (idleTime > 1f) {
 
 			currentState = 1;
 			idleTime = 0;

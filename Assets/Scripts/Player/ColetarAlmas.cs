@@ -42,6 +42,8 @@ public class ColetarAlmas : MonoBehaviour {
         if (col.tag == "AlmaC") //Se player colidir com as alminhas flutuantes
         {
            
+			StartCoroutine (AlmaLerp.instance.Lerp ());
+
             if (PlayerController.almas == 4)
             {
                 if (PlayerController.vidas != 5)

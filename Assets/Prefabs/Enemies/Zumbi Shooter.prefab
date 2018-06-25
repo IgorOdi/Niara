@@ -340,7 +340,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1588761842893720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -118.3, y: -2.47, z: 1.2}
+  m_LocalPosition: {x: -355.44, y: 0.09, z: 6.871875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4211259846713678}
@@ -407,8 +407,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14732283, y: 0.25108624}
-  m_Size: {x: 1.1666063, y: 1.9783754}
+  m_Offset: {x: -0.14732283, y: 0.12342501}
+  m_Size: {x: 1.1666063, y: 1.723053}
   m_Direction: 0
 --- !u!95 &95480696022065526
 Animator:
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.91276336
+  m_Length: 0.9127576
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4275209577897800}
   m_AttachedIK: {fileID: 0}
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.46110797
+  m_Length: 0.46110818
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4592722913666328}
   m_AttachedIK: {fileID: 0}
@@ -659,7 +659,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 21255771747115058, guid: 08cb6b3f86bce054ab0b3c18bad74a52, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -706,7 +706,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 21324654334219168, guid: 8355f60a765f0bf418ce2870445cf84b, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

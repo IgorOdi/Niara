@@ -36,7 +36,7 @@ public class ZumbiShooter : EnemyBehaviour {
 
 			if (ativo) {
 
-				flip ();
+//				flip ();
 
 				if (ativo) {
 
@@ -47,7 +47,7 @@ public class ZumbiShooter : EnemyBehaviour {
 
 			if (!vivo) {
 
-				StartCoroutine (respawnEnemy ());
+				StartCoroutine (preMorte ());
 			}
 		}
 	}
@@ -56,36 +56,23 @@ public class ZumbiShooter : EnemyBehaviour {
 
 		vomitTime += Time.fixedDeltaTime;
 
-		if (vomitTime > 1 && vomitTime < 2) {
+		if (vomitTime > 0 && vomitTime < 2) {
+
+			vomitou = false;
 
 		} else if (vomitTime > 2 && vomitTime <= 3) {
-
-			vomitShooterTime += Time.fixedDeltaTime;
-
+			
 			anim.SetBool ("New Bool", true);
 
-			if (vomitShooterTime > 0.35f) {
+			if (vomitTime >= 2.4f && !vomitou) {
 
-				if (vomitCounter < 2) {
-
-					if (!vomitou) {
-
-						FMODUnity.RuntimeManager.PlayOneShot (somVomito);
-						vomitou = true;
-					}
-
-					vomitou = false;
-
-					Instantiate (tiro, tiroSpawn.transform.position, tiroSpawn.transform.rotation);
-					vomitCounter++;
-					vomitShooterTime = 0;
-				} 
+				FMODUnity.RuntimeManager.PlayOneShot (somVomito);
+				GameObject vomit = Instantiate (tiro, tiroSpawn.transform.position, tiroSpawn.transform.rotation) as GameObject;
+				vomit.GetComponent<Vomito> ().enemy = transform;
+				vomitTime = 0;
+				vomitou = true;
+				anim.SetBool ("New Bool", false);
 			}
-		} else if (vomitTime >= 3) {
-			
-			anim.SetBool ("New Bool", false);
-			vomitTime = 0;
-			vomitCounter = 0;
 		}
 	}
 
@@ -101,7 +88,7 @@ public class ZumbiShooter : EnemyBehaviour {
 			GetComponentsInChildren<SkinnedMeshRenderer> () [i].enabled = false;
 		}
 
-		yield return new WaitForSeconds (6f);
+		yield return new WaitForSeconds (10f);
 		vivo = true;
 		vidas = 2;
 		GetComponent<Collider2D> ().enabled = true;

@@ -67,7 +67,7 @@ public class Lixoso : EnemyBehaviour {
 	void Start() {
 
 		vivo = true;
-		vidasMax = 100;
+		vidasMax = 80;
 		vidas = vidasMax;
 		vulneravel = true;
 
@@ -210,6 +210,16 @@ public class Lixoso : EnemyBehaviour {
 
 			socou = false;
 			placa.enabled = false;
+
+			if (PlayerController.grounded && PlayerController.vulneravel) {
+
+				PlayerController.recebeDano = true;
+				PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
+				PlayerController.vidas -= danoBase; //Subtrai o dano da habilidade/jogador;
+
+				PlayerController.recebeKnockBackVert = true;
+			}
+
 //			Instantiate (lixoWave, waveSpawn.position, waveSpawn.rotation);
 			skillCount++;
 			waveCount++;
