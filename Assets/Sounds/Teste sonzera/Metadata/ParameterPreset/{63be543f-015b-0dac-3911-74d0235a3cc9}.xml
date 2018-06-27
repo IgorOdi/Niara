@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{63be543f-015b-0dac-3911-74d0235a3cc9}">
+        <property name="name">
+            <value>Andando</value>
+        </property>
+        <relationship name="folder">
+            <destination>{02fdfbae-9865-4c69-a9bf-b530d532a76d}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{23ba929f-89d1-4eab-8eb2-b76ad1d1ff68}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{23ba929f-89d1-4eab-8eb2-b76ad1d1ff68}">
+        <property name="isExposedRecursively">
+            <value>false</value>
+        </property>
+    </object>
+</objects>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{390c3ee0-cb34-4950-b034-1a7c928089f2}">
         <property name="name">
             <value>helice</value>
@@ -32,7 +32,7 @@
             <destination>{736ef7fc-e308-4d9d-889c-f3808fe9f3ad}</destination>
         </relationship>
         <relationship name="parameters">
-            <destination>{0e50c160-5953-4b34-be2d-63521567dce5}</destination>
+            <destination>{66fd92fb-a385-0713-25d1-f7cbce3de0a2}</destination>
         </relationship>
         <relationship name="banks">
             <destination>{8caa7537-e066-4639-9959-8abc6f7e0186}</destination>
@@ -77,10 +77,10 @@
             <destination>{05d86bc5-db21-4176-a182-420595bb5042}</destination>
         </relationship>
     </object>
-    <object class="GameParameter" id="{0e50c160-5953-4b34-be2d-63521567dce5}">
-        <property name="name">
-            <value>Ativo</value>
-        </property>
+    <object class="ParameterProxy" id="{66fd92fb-a385-0713-25d1-f7cbce3de0a2}">
+        <relationship name="preset">
+            <destination>{0e50c160-5953-4b34-be2d-63521567dce5}</destination>
+        </relationship>
     </object>
     <object class="EventMixerMaster" id="{75bd1755-7550-45e9-8e4c-34196c0e2802}">
         <relationship name="effectChain">

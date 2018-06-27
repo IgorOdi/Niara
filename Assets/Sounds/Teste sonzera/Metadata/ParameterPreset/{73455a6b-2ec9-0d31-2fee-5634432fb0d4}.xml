@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{73455a6b-2ec9-0d31-2fee-5634432fb0d4}">
+        <property name="name">
+            <value>FabricanteDead</value>
+        </property>
+        <relationship name="folder">
+            <destination>{8e039d3e-905e-42ca-b60c-25144bdf7c52}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{33419ccb-a643-4e36-984d-958eb1a47375}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{33419ccb-a643-4e36-984d-958eb1a47375}">
+        <property name="isExposedRecursively">
+            <value>false</value>
+        </property>
+    </object>
+</objects>

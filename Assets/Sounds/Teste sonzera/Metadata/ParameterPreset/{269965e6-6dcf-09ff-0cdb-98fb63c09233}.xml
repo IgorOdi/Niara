@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{269965e6-6dcf-09ff-0cdb-98fb63c09233}">
+        <property name="name">
+            <value>Fase</value>
+        </property>
+        <relationship name="folder">
+            <destination>{8e039d3e-905e-42ca-b60c-25144bdf7c52}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{669da346-e545-4af8-bb78-5b41914b5192}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{669da346-e545-4af8-bb78-5b41914b5192}">
+        <property name="maximum">
+            <value>3</value>
+        </property>
+        <property name="isExposedRecursively">
+            <value>false</value>
+        </property>
+    </object>
+</objects>

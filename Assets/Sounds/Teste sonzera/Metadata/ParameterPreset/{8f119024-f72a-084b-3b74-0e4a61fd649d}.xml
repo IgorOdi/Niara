@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{8f119024-f72a-084b-3b74-0e4a61fd649d}">
+        <property name="name">
+            <value>naArvore</value>
+        </property>
+        <relationship name="folder">
+            <destination>{8e039d3e-905e-42ca-b60c-25144bdf7c52}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{cf155684-7fa0-4b4c-8cd7-cdf09376a73c}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{cf155684-7fa0-4b4c-8cd7-cdf09376a73c}">
+        <property name="isExposedRecursively">
+            <value>false</value>
+        </property>
+    </object>
+</objects>

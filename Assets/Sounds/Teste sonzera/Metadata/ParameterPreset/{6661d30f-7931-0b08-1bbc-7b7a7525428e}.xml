@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{6661d30f-7931-0b08-1bbc-7b7a7525428e}">
+        <property name="name">
+            <value>OnBoss</value>
+        </property>
+        <relationship name="folder">
+            <destination>{8e039d3e-905e-42ca-b60c-25144bdf7c52}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{266515af-f1bb-480f-ac1f-b8c087ae812f}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{266515af-f1bb-480f-ac1f-b8c087ae812f}">
+        <property name="isExposedRecursively">
+            <value>false</value>
+        </property>
+    </object>
+</objects>
