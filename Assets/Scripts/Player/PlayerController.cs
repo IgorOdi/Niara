@@ -416,7 +416,7 @@ public class PlayerController: MonoBehaviour {
 			an.ResetTrigger ("Jump");
 			an.SetBool ("Fall", false);
 			canDoubleJump = true;
-			rb.gravityScale = 1;
+			rb.gravityScale = 1.5f;
 
     	}
 

@@ -36,6 +36,8 @@ public class Serrador : EnemyBehaviour {
 	private bool serrou;
 	private bool torou;
 
+	private bool masterWalkBack;
+
 	[FMODUnity.EventRef]
 	public string somPassos = "event:/Passos";
 	public static FMOD.Studio.EventInstance passosSerraEv;
@@ -113,31 +115,48 @@ public class Serrador : EnemyBehaviour {
 
 	void changeState() {
 
-		if (distancia <= 10 && distancia >= -10) {
+		if (((transform.position.x < -8.5f  && distancia > 0) || (transform.position.x > 8.5f && distancia < 0)) && !masterWalkBack) {
 
-			if (serrarCount <= 2 && flameCount <= 2) {
-				
-				randomizador = Random.Range (0, 2);
+			serrarCount = 3;
+			flameCount = 3;
+			currentState = 1;
+			masterWalkBack = true;
 
-				if (randomizador == 0) {
+		} else {
+
+			if (distancia <= 10 && distancia >= -10) {
+
+				if (serrarCount <= 2 && flameCount <= 2) {
 				
-					currentState = 2;
+					if (transform.position.x < -8.5f || transform.position.x > 8.5f) {
+
+						currentState = 2;
+					} else {
+
+						randomizador = Random.Range (0, 2);
+
+						if (randomizador == 0) {
+				
+							currentState = 2;
+						} else {
+
+							currentState = 3;
+						}
+					}
+
 				} else {
 
-					currentState = 3;
+					currentState = 1;
 				}
 			} else {
 
-				currentState = 1;
-			}
-		} else {
+				if (walkCount <= 2) {
 
-			if (walkCount <= 2) {
+					currentState = 1;
+				} else {
 
-				currentState = 1;
-			} else {
-
-				currentState = 4;
+					currentState = 4;
+				}
 			}
 		}
 	}
@@ -216,7 +235,6 @@ public class Serrador : EnemyBehaviour {
 				movingTime = 0;
 				currentState = 4;
 			}
-
 		}
 	}
 
@@ -245,6 +263,8 @@ public class Serrador : EnemyBehaviour {
 			serrarTime = 0;
 			serrarCount++;
 			currentState = 0;
+
+			masterWalkBack = false;
 		}
 	}
 

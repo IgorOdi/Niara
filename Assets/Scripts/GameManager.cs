@@ -124,29 +124,27 @@ public class GameManager : MonoBehaviour {
 
 		cena = SceneManager.GetActiveScene ();
 
-		print(cena.name);
-
 		zonaFase();
 
-		if (zonaParam != null) zonaParam.setValue(zona);
-		if (faseParam != null) faseParam.setValue(fase);
+		zonaParam.setValue(zona);
+		faseParam.setValue(fase);
 
 		if (cena.name.Contains("Z")) player = GameObject.FindGameObjectWithTag("Player");
 
 
 		if (cena.name == "Z" + zona + "F" + fase + " Boss") {
-			if (onBossParam != null) onBossParam.setValue (1);
+			onBossParam.setValue (1);
 			Debug.Log ("TÁ NO BOSS IHAAAA");
 		} else {
 
-			if (onBossParam != null) onBossParam.setValue (0);
+			onBossParam.setValue (0);
 		}
 
 		if (MainMenu.pararMusica) {
-			if (pararParam != null) pararParam.setValue (1f);
+			pararParam.setValue (1f);
 		} else {
 			
-			if (pararParam != null)pararParam.setValue(0f);
+			pararParam.setValue(0f);
 		}
 
 		if (!pegouHabilidadesIniciais) {
@@ -273,7 +271,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void ChamaFase () {
-		if (!IsInvoking()) Invoke ("LoadFase", 1f);
+		if (!IsInvoking()) Invoke ("LoadFase", 1.5f);
 		SelecionaFase.faseDesbloq++;
 	}
 

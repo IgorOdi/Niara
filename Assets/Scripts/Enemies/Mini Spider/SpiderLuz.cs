@@ -100,7 +100,7 @@ public class SpiderLuz : EnemyBehaviour {
 
 			currentState = 0;
 			anim.SetTrigger ("New Trigger 0");
-			StartCoroutine (morteCooldown ());
+			StartCoroutine (preMorte ());
 		}
 	}
 
@@ -117,7 +117,7 @@ public class SpiderLuz : EnemyBehaviour {
 			passosAranhaEv.stop (FMOD.Studio.STOP_MODE.IMMEDIATE);
 
 			GetComponent<Collider2D> ().enabled = false;
-			rb.gravityScale = 0;
+//			rb.gravityScale = 0;
 		}
 	}
 
@@ -181,7 +181,7 @@ public class SpiderLuz : EnemyBehaviour {
 
 	IEnumerator morteCooldown() {
 
-		yield return new WaitForSeconds (6f);
+		yield return new WaitForSeconds (0.1f);
 		Instantiate (destroy, transform.position, Quaternion.identity);
 		DestroyImmediate (gameObject);
 	}

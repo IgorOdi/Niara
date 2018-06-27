@@ -76,7 +76,6 @@ public class TatuStates : EnemyBehaviour {
 
 		passosTatuEv = FMODUnity.RuntimeManager.CreateInstance(somPassos);
 		rolarTatuEv = FMODUnity.RuntimeManager.CreateInstance (somRolar);
-
     }
 
     void FixedUpdate() {
@@ -153,10 +152,44 @@ public class TatuStates : EnemyBehaviour {
 
                 if (divingCount < 2) {
 
-                    currentState = 4;
-                } else if (rollingCount < 3) {
+					randomizador = Random.Range (0, 2);
 
-                    currentState = 3;
+					if (randomizador == 0) {
+						
+						currentState = 4;
+					} else {
+						
+						if (rollingCount < 3) {
+							
+							currentState = 3;
+						} else {
+							
+							currentState = 4;
+							rollingCount = 0;
+						}
+					}
+
+					hittingCount = 0;
+                } else if (rollingCount < 3) {
+					
+					randomizador = Random.Range (0, 2);
+
+					if (randomizador == 0) {
+
+						currentState = 3;
+					} else {
+
+						if (divingCount < 2) {
+
+							currentState = 4;
+						} else {
+
+							currentState = 3;
+							rollingCount = 0;
+						}
+					}
+
+					hittingCount = 0;
                 } else {
 
                     currentState = 5;
@@ -337,7 +370,7 @@ public class TatuStates : EnemyBehaviour {
                 rollingCount = 0;
             }
 
-            if (divingCount >= 3) {
+            if (divingCount >= 2) {
 
                 divingCount = 0;
             }

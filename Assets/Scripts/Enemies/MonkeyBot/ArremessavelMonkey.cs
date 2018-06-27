@@ -17,7 +17,7 @@ public class ArremessavelMonkey : ProjectileBase {
 
 		player = GameObject.Find ("Player").GetComponent<Transform>();
 
-		distanceMultiplier = player.transform.position.x > transform.position.x ? -1 : 1;
+		distanceMultiplier = player.transform.position.x > transform.position.x ? 1 : -1;
 		//distanceMultiplier = (transform.position.x - player.position.x) / 10;
 
 		rb = GetComponent<Rigidbody2D> ();

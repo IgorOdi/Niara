@@ -33,7 +33,7 @@ public class Missil : ProjectileBase {
 
 		tempoDestruir += Time.deltaTime;
 
-		if (tempoDestruir >= 5) {
+		if (tempoDestruir >= 3) {
 
 			somSeguirEv.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 			somSeguirEv.release();

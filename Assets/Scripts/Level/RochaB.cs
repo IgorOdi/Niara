@@ -5,60 +5,48 @@ using UnityEngine;
 public class RochaB : MonoBehaviour {
 
 	int danoBase;
-	private bool ativa;
-	private float distancia;
-	Transform player;
-	Rigidbody2D rb;
+	Vector3 startPosition;
 
 	void Start () {
 
 		danoBase = 1;
-		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ();
-		rb = GetComponent<Rigidbody2D> ();
-		rb.gravityScale = 0;
+		transform.position += Vector3.up * Random.Range (-3f, 3f);
+		startPosition = transform.position;
 	}
 
 	void Update() {
 
-		distancia = transform.position.x - player.transform.position.x;
+		transform.position += Vector3.down * 0.4f;
 
-		ativa = distancia < 3 ? true : false;
+		if (transform.position.y < -15) {
 
-		if (ativa) {
-
-			rb.gravityScale = 1;
-		} else {
-
-			rb.gravityScale = 0;
+			transform.position = startPosition + Vector3.up * Random.Range (-2f, 2f);
 		}
 	}
 
 	void OnCollisionEnter2D(Collision2D other) {
 
-		if (rb.velocity.magnitude > 3) {
-			
-			if (other.gameObject.tag == "Player") { //com o Player,
+		if (other.gameObject.tag == "Player") { //com o Player,
 
-				if (PlayerController.vulneravel) { //Se o Player estiver vulneravel:
+			if (PlayerController.vulneravel) { //Se o Player estiver vulneravel:
 
-					PlayerController.recebeDano = true;
-					PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
-					PlayerController.vidas -= danoBase; //Subtrai o dano da habilidade/jogador;
-				}
+				PlayerController.recebeDano = true;
+				PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
+				PlayerController.vidas -= danoBase; //Subtrai o dano da habilidade/jogador;
+			}
 
-				PlayerController.recebeKnockBack = true;
-			} else if (other.gameObject.tag == "Inimigo") {
+			PlayerController.recebeKnockBack = true;
+		} else if (other.gameObject.tag == "Inimigo") {
 
-				var enemy = other.gameObject.GetComponent<EnemyBehaviour> ();
+			var enemy = other.gameObject.GetComponent<EnemyBehaviour> ();
 
-				if (enemy.vulneravel && enemy.vivo) {
+			if (enemy.vulneravel && enemy.vivo) {
 
-					enemy.recebeuDano = true; //Avisa que o inimigo recebeu dano;
-					enemy.vidas -= danoBase; //Perde vida igual ao dano do Player.
-				}
+				enemy.recebeuDano = true; //Avisa que o inimigo recebeu dano;
+				enemy.vidas -= danoBase; //Perde vida igual ao dano do Player.
 			}
 		}
 
-		Destroy (gameObject, 0f);
+		transform.position = startPosition + Vector3.up * Random.Range (-2f, 2f);
 	}
 }

@@ -11,7 +11,7 @@ public class ProjectileBehavior : MonoBehaviour {
 
 	void Awake () {
 
-		Destroy (gameObject, 2.5f); //Destrói a lança depois de três segundos.
+		Destroy (gameObject, 2.5f); //Destrói a lança depois de 2.5 segundos.
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {

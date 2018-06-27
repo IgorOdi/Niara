@@ -33,7 +33,7 @@ public class Fornalha : EnemyBehaviour {
 			spawnTora ();
 		}
 
-        if(!vivo) {
+        if (!vivo) {
 
             StartCoroutine(preMorte());
         }
@@ -42,10 +42,8 @@ public class Fornalha : EnemyBehaviour {
     void spawnTora() {
 
         spawnTime += Time.fixedDeltaTime;
-
-		if (spawnTime >= 2.5f && spawnTime <= 4) {
-			
-		} else if (spawnTime >= 4) {
+	
+		if (spawnTime >= 2.5f) {
 
 			if (!shootou) {
 

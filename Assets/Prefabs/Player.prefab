@@ -792,7 +792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4364672205196580}
   m_Layer: 10
-  m_Name: Meshs
+  m_Name: Meshes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2043,7 +2043,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 21008142110396070, guid: 5def37eccba58ee40b96a97c41904ee2, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2166,7 +2166,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 6200000, guid: 172698f639dc9f549920e60f46442bf2, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 0
@@ -2483,8 +2483,8 @@ MonoBehaviour:
   forceMultiplier: 1
   Niara: {fileID: 1351274780330506}
   speed: 6
-  jumpPower: 750
-  doubleJumpPower: 700
+  jumpPower: 1000
+  doubleJumpPower: 800
   facingRight: 0
   canDoubleJump: 1
   micoSprite: {fileID: 1162289794433992}
@@ -2909,7 +2909,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 25
+  m_SortingOrder: 26
   m_Bones: []
   m_BoneTransforms:
   - {fileID: 4887543562374074}
@@ -4117,7 +4117,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 25
+  m_SortingOrder: 26
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0

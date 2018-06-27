@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ZumbiJumper : EnemyBehaviour {
 
+	[SerializeField]
 	private int currentState;
 
 	private float idleTime;
@@ -73,7 +74,8 @@ public class ZumbiJumper : EnemyBehaviour {
 
 		idleTime += Time.deltaTime;
 
-		print (idleTime);
+		print ("Idle: " + idleTime);
+		print ("Distancia: " + distancia);
 
 		if (!idlou) {
 
@@ -86,26 +88,49 @@ public class ZumbiJumper : EnemyBehaviour {
 			if (grounded) {
 
 				idleTime = 0;
-				currentState = 1;
+				currentState = 0;
+			}
+		} else {
+			
+			if (distancia <= 10 && distancia >= -10) {
+
+				anim.SetBool ("New Bool", false);
+				rb.gravityScale = 1;
+				_collider.isTrigger = false;
+				idleTime = 0;
 			} else {
 
-				if (distancia <= 6 && distancia >= -6) {
-
-					anim.SetBool ("New Bool", false);
-					rb.gravityScale = 1;
-					_collider.isTrigger = false;
-					idleTime = 0;
-				} else {
-
-					rb.gravityScale = 0;
-				}
+				rb.gravityScale = 0;
 			}
 
 			flip ();
-		} else if (idleTime > 1 && idleTime < 2) {
-
-			GetComponent<Collider2D> ().offset = new Vector2(0, 0.5f);
 		}
+
+//		if (idleTime > 2) {
+//
+//			if (grounded) {
+//
+//				idleTime = 0;
+//				currentState = 1;
+//			} else {
+//
+//				if (distancia <= 8 && distancia >= -8) {
+//
+//					anim.SetBool ("New Bool", false);
+//					rb.gravityScale = 1;
+//					_collider.isTrigger = false;
+//					idleTime = 0;
+//				} else {
+//
+//					rb.gravityScale = 0;
+//				}
+//			}
+//
+//			flip ();
+//		} else if (idleTime > 1 && idleTime < 2) {
+//
+//			GetComponent<Collider2D> ().offset = new Vector2(0, 0.5f);
+//		}
 	}
 
 	void jumpState() {

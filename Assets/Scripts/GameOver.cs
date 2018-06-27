@@ -14,9 +14,14 @@ public class GameOver : MonoBehaviour {
 		Coletavel.coletaveis = Coletavel.coletaveis - Coletavel.pegouColetavel;
 		Coletavel.pegouColetavel = 0;
 
-		GameManager.instance.OnChangeScene("Z" + GameManager.zona + "F" + GameManager.fase);
 		PlayerController.hitPlayed = true;
 		FabricanteAI.traficanteIsDead = false;
+		StartCoroutine (GameOverTime ());
     }
 
+	IEnumerator GameOverTime() {
+
+		yield return new WaitForSeconds (2f);
+		GameManager.instance.OnChangeScene("Z" + GameManager.zona + "F" + GameManager.fase);
+	}
 }

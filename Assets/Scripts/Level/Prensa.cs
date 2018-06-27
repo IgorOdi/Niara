@@ -4,88 +4,35 @@ using UnityEngine;
 
 public class Prensa : MonoBehaviour {
 
-	private GameObject player;
+	private Animator anim;
 	[SerializeField]
-	private Rigidbody2D rb;
+	private float startTime;
 
+	void Start() {
 
-	private bool caiu;
-
-	private bool active = false;
-
-	[FMODUnity.EventRef]
-	public string somPrensaUp;
-
-	[FMODUnity.EventRef]
-	public string somPrensaHit;
-
-	public bool upPlayed;
-	public bool hitPlayed = false;
-
-	void Awake () {
-
-		player = GameObject.FindGameObjectWithTag("Player");
-
+		anim = GetComponentInParent<Animator> ();
+		StartCoroutine (StartAnimator ());
 	}
-	
-	void Update ()
-	{
 
-		if (Vector2.Distance(new Vector2(this.transform.position.x,0), new Vector2(player.transform.position.x,0)) < 12f) active = true;
-		else active = false;
+	IEnumerator StartAnimator() {
 
-		if (active) {
-			rb.bodyType = RigidbodyType2D.Dynamic;
-			rb.gravityScale = 0.5f;
-
-			if (caiu) {
-				if (!hitPlayed) {
-					FMODUnity.RuntimeManager.PlayOneShot(somPrensaHit, this.transform.position);
-					hitPlayed = true;
-				}
-
-				upPlayed = false;
-
-				StartCoroutine (Subir ());
-			} else {
-				
-			}
-		}
-
-		else {
-			rb.bodyType = RigidbodyType2D.Static;
-		}
+		yield return new WaitForSeconds (startTime);
+		anim.enabled = true;
 	}
 
 	void OnCollisionEnter2D (Collision2D other)
 	{
-		if (other.gameObject.tag == "Player" && rb.velocity.y < 0 && PlayerController.vulneravel) {
-			PlayerController.vidas--;
-			PlayerController.recebeDano = true;
-			PlayerController.vulneravel = false;
-		}
-		else if (other.gameObject.tag == "Chão") {
-			
-			caiu = true;
-		}
-	}
-
-	void OnCollisionExit2D (Collision2D other)
-	{
 		if (other.gameObject.tag == "Player") {
-			
-		}
-	}
 
-	IEnumerator Subir() {
-			yield return new WaitForSeconds(0.5f);
-			caiu = false;
-			rb.gravityScale = -1f;
-			hitPlayed = false;
-			if (!upPlayed) {
-			FMODUnity.RuntimeManager.PlayOneShot(somPrensaUp, this.transform.position);
-			upPlayed = true;
+			print ("Player");
+
+			if (PlayerController.vulneravel) { //Se o Player estiver vulneravel:
+
+				PlayerController.recebeDano = true;
+				PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
+				PlayerController.vidas -= 1; //Subtrai o dano da habilidade/jogador;
 			}
 
+		}
 	}
 }

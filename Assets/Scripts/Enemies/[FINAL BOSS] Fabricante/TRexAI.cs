@@ -178,7 +178,7 @@ public class TRexAI : EnemyBehaviour {
 		barraInimigo.vidaInimigo = GameObject.Find ("Barra de vida Frente").GetComponent<Image> ();
 		yield return new WaitForSeconds (6f);
 		canStartKilling = true;
-		if (GameManager.traficanteDeadParam != null) GameManager.traficanteDeadParam.setValue(1);
+		GameManager.traficanteDeadParam.setValue(1);
 	}
 
 	void changeState() {

@@ -41,7 +41,8 @@ public class Morcego : EnemyBehaviour {
             }
         } else {
 
-            explosaoMorte();
+			rb.gravityScale = 1;
+			StartCoroutine (preMorte ());
         }
 
 
@@ -75,7 +76,7 @@ public class Morcego : EnemyBehaviour {
 
         explosaoTime += Time.fixedDeltaTime;
 
-        if (explosaoTime < 2f) {
+        if (explosaoTime < 0.1f) {
 
 			anim.SetBool ("New Bool", false);
 			rb.gravityScale = 1;
