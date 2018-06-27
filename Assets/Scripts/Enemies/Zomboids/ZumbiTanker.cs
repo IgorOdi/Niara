@@ -9,6 +9,8 @@ public class ZumbiTanker : EnemyBehaviour {
 	private float hitTime;
 	private bool canHit;
 
+	private float waitTime;
+	private float moveTime;
 	private float speed;
 	private float horizontal;
 
@@ -73,7 +75,6 @@ public class ZumbiTanker : EnemyBehaviour {
 
 		horizontal = lado;
 		flip();
-		changeState();
 
 		move = new Vector2(horizontal * speed, rb.velocity.y);
 	}
@@ -103,11 +104,19 @@ public class ZumbiTanker : EnemyBehaviour {
 
 	void waitState() {
 
+		waitTime += Time.deltaTime;
 		anim.SetBool("New Bool", false);
+
+		if (waitTime > 1) {
+			
+			changeState ();
+			waitTime = 0;
+		}
 	}
 
 	void chaseState() {
 
+		moveTime += Time.deltaTime;
 		porradeira.SetActive(false);
 
 		if (!inIdle) {
@@ -116,13 +125,20 @@ public class ZumbiTanker : EnemyBehaviour {
 			inIdle = true;
 		}
 
-		if (Physics2D.OverlapBox (detectaChao.position, new Vector2 (3, 3), 0, LayerMask.GetMask ("Piso"))) {
+		if (moveTime < 1) {
+
+			if (Physics2D.OverlapBox (detectaChao.position, new Vector2 (3, 3), 0, LayerMask.GetMask ("Piso"))) {
 			
-			rb.velocity = move;
-			anim.SetBool ("New Bool", true);
+				rb.velocity = move;
+				anim.SetBool ("New Bool", true);
+			} else {
+
+				anim.SetBool ("New Bool", false);
+			}
 		} else {
 
-			anim.SetBool ("New Bool", false);
+			moveTime = 0;
+			changeState ();
 		}
 	}
 
@@ -156,6 +172,7 @@ public class ZumbiTanker : EnemyBehaviour {
 			hitTime = 0;
 			anim.SetBool ("New Bool 0", false);
 			StartCoroutine(hitCooldown());
+			changeState ();
 		}
 	}
 
