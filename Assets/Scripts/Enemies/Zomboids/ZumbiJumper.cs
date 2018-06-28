@@ -74,9 +74,6 @@ public class ZumbiJumper : EnemyBehaviour {
 
 		idleTime += Time.deltaTime;
 
-		print ("Idle: " + idleTime);
-		print ("Distancia: " + distancia);
-
 		if (!idlou) {
 
 			idleZumbiEv.start();
@@ -87,8 +84,9 @@ public class ZumbiJumper : EnemyBehaviour {
 
 			if (grounded) {
 
+				_collider.offset = new Vector2 (0, 0.5f);
 				idleTime = 0;
-				currentState = 0;
+				currentState = 1;
 			}
 		} else {
 			
@@ -98,6 +96,7 @@ public class ZumbiJumper : EnemyBehaviour {
 				rb.gravityScale = 1;
 				_collider.isTrigger = false;
 				idleTime = 0;
+				currentState = 1;
 			} else {
 
 				rb.gravityScale = 0;
@@ -105,32 +104,6 @@ public class ZumbiJumper : EnemyBehaviour {
 
 			flip ();
 		}
-
-//		if (idleTime > 2) {
-//
-//			if (grounded) {
-//
-//				idleTime = 0;
-//				currentState = 1;
-//			} else {
-//
-//				if (distancia <= 8 && distancia >= -8) {
-//
-//					anim.SetBool ("New Bool", false);
-//					rb.gravityScale = 1;
-//					_collider.isTrigger = false;
-//					idleTime = 0;
-//				} else {
-//
-//					rb.gravityScale = 0;
-//				}
-//			}
-//
-//			flip ();
-//		} else if (idleTime > 1 && idleTime < 2) {
-//
-//			GetComponent<Collider2D> ().offset = new Vector2(0, 0.5f);
-//		}
 	}
 
 	void jumpState() {
@@ -182,7 +155,7 @@ public class ZumbiJumper : EnemyBehaviour {
 
 		if (other.gameObject.tag == "Player" || other.gameObject.tag == "Chão") {
 
-			_collider.offset = new Vector2(0, 1f);
+			_collider.offset = new Vector2(0, .5f);
 			anim.SetTrigger ("New Trigger");
 		}
 	}

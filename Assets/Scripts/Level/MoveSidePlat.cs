@@ -28,7 +28,7 @@ public class MoveSidePlat : MonoBehaviour {
 	void FixedUpdate ()
 	{	
 
-		if (transform.position.x - player.transform.position.x < 6f) active = true;
+		if (transform.position.x - player.transform.position.x < 3f) active = true;
 
 		if (active) {
 			if (transform.position.x > finalPos)

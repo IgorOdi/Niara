@@ -16,17 +16,10 @@ public class Rocha : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D other) {
 
 		if (rb.velocity.magnitude > 8) {
-			
-			if (other.gameObject.tag == "Player") { //com o Player,
 
-				if (PlayerController.vulneravel) { //Se o Player estiver vulneravel:
+			if (other.gameObject.tag == "Player") {
 
-					PlayerController.recebeDano = true;
-					PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
-					PlayerController.vidas -= danoBase; //Subtrai o dano da habilidade/jogador;
-				}
-
-				PlayerController.recebeKnockBack = true;
+				PlayerController.Damage (danoBase, false);
 			}
 
 		} else if (rb.velocity.magnitude > 2) {

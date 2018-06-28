@@ -9,12 +9,13 @@ public class Ganhou : MonoBehaviour {
     
 	void Start() {
 
-		ChamaGM ();
+		StartCoroutine(ChamaGM ());
 	}
 
-    void ChamaGM()
+	IEnumerator ChamaGM()
     {
 
+		yield return new WaitForSeconds (1.5f);
         gm.ChamaFase();
 
     }

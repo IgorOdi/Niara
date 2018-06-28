@@ -174,14 +174,8 @@ public class NamelessBoss : EnemyBehaviour {
 
 			if (Physics2D.OverlapCircle (transform.position, 5, mask)) {
 
-				if (PlayerController.vulneravel) { //Se o Player estiver vulneravel:
+				PlayerController.Damage (danoBase, false);
 
-					PlayerController.recebeDano = true;
-					PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
-					PlayerController.vidas -= danoBase; //Subtrai o dano da habilidade/jogador;
-				}
-
-				PlayerController.recebeKnockBack = true;
 			}
 
         } else {

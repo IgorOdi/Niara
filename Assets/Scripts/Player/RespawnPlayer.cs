@@ -7,20 +7,23 @@ using UnityEngine.UI;
 public class RespawnPlayer : MonoBehaviour
 {
 
-    public Respawn res2;
+	public static RespawnPlayer instance;
     public bool Spawn;
     public bool Check1;
     public bool Check2;
     public string nomeCena;
 	
 	public GameManager gm;
-
-    private GameObject spawns;
+	[HideInInspector]
+	public Transform lastCheckpoint;
+	[HideInInspector]
+	public PlayerController player;
 
     private void Start()
     {
-        spawns = GameObject.FindGameObjectWithTag("Enemy Respawn");
-		gm = GameObject.Find("Game Manager(Clone)").GetComponent<GameManager>();
+		instance = this;
+		gm = GameManager.instance;
+		player = GameObject.Find ("Player").GetComponent<PlayerController> ();
     }
 
     public void OnTriggerEnter2D(Collider2D other) { //Se tiver colisão
@@ -30,6 +33,7 @@ public class RespawnPlayer : MonoBehaviour
             Spawn = true;
             Check1 = false;
             Check2 = false;
+			lastCheckpoint = other.transform;
 			GameManager.shouldSave = true;
         }
 
@@ -38,6 +42,7 @@ public class RespawnPlayer : MonoBehaviour
             Spawn = false;
             Check1 = true;
             Check2 = false;
+			lastCheckpoint = other.transform;
 			GameManager.shouldSave = true;
         }
 
@@ -46,107 +51,43 @@ public class RespawnPlayer : MonoBehaviour
             Spawn = false;
             Check1 = false;
             Check2 = true;
+			lastCheckpoint = other.transform;
 			GameManager.shouldSave = true;
         }    
     }
+   
+	public void VerifyDeath() {
 
-	public void OnCollisionEnter2D(Collision2D other) {
+		string cena = GameManager.instance.cena.name;
 
-		if (PlayerController.vidas < 2) {
+		if (cena.Contains ("Boss")) {
 
-			if (other.gameObject.tag == "Inimigo") {
-                //aparece imagem de gameover que se você clicar restarta tudo 
+			FabricanteAI.traficanteIsDead = false;
+			GameManager.instance.OnChangeScene (cena);
+		} else {
 
-                nomeCena = SceneManager.GetActiveScene().name;
-                StartCoroutine (GameOver ());
-                
-			}
-
-		}
-
-		if (other.gameObject.tag == "Boss") {
-
-            if (PlayerController.vidas < 2)
-            {
-                nomeCena = SceneManager.GetActiveScene().name;
-                StartCoroutine(GameOver());
-                //restartCurrentScene ();
-            }
-
-            
+			EnemyRespawn.respawnEnemy = true;
+			player.rb.velocity = Vector2.zero;
+			player.transform.position = lastCheckpoint.position;
+			PlayerController.vidas = 5;
+			StartCoroutine (ReturnMove ());
 		}
 	}
 
-    public void OnTriggerExit2D(Collider2D other) {//Se tiver colisão
-
-        if (other.tag == "Espinho")
-        {
-
-            if (PlayerController.vidas < 1)
-            {
-                nomeCena = SceneManager.GetActiveScene().name;
-                StartCoroutine(GameOver());
-
-            }
-            
-        }
-
-		if (PlayerController.vidas < 1) {
-
-			if (other.gameObject.tag == "Inimigo") {
-                //aparece imagem de gameover que se você clicar restarta tudo 
-                nomeCena = SceneManager.GetActiveScene().name;
-                StartCoroutine (GameOver ());
-
-			}
-
-		}
-
-		if (other.gameObject.tag == "Boss") {
-
-			if (PlayerController.vidas < 1)
-			{
-
-
-                nomeCena = SceneManager.GetActiveScene().name;
-                StartCoroutine(GameOver());
-				//restartCurrentScene ();
-			}
-
-
-		}
-
-    }
-    
-   
     public IEnumerator GameOver()
     {
 
         // suspend execution for 5 seconds
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.5f);
         GameManager.instance.OnChangeScene("Fim");
-        //this.transform.position = res2.spawnPoints[0].transform.position; //O player vai pra posição do Spawn (Inicio do Jogo)
-        // PlayerController.vidas = 5; //E reseta as vidas
-
     }
 
+	public IEnumerator ReturnMove() {
 
+		float startTime = Time.time;
+		while (Time.time < startTime + .5f)
+			yield return null;
 
-   /* IEnumerator Reviver(){
-
-        // suspend execution for 5 seconds
-        yield return new WaitForSeconds(0.2f);
-        GameManager.instance.OnChangeScene(SceneManager.GetActiveScene().name);
-        //this.transform.position = res2.spawnPoints[0].transform.position; //O player vai pra posição do Spawn (Inicio do Jogo)
-       // PlayerController.vidas = 5; //E reseta as vidas
-
-    }
-    */
-    public void restartCurrentScene(){
-        
-        GameManager.instance.OnChangeScene(SceneManager.GetActiveScene().name);
-        //Debug.Log("funcionou");
-    }
-
-
+		PlayerController.moveBlock = false;
+	}
 }

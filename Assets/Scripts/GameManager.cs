@@ -98,12 +98,12 @@ public class GameManager : MonoBehaviour {
 
 	public void OnChangeScene(string sceneName) {
 		sceneLoaded = false;
-		if (sceneName != SceneManager.GetActiveScene().name && !sceneLoaded) {
+		if (!sceneLoaded) {
 			StartCoroutine (ChangeScene(sceneName));
 		}
 	}
 
-	IEnumerator ChangeScene(string sceneName) {
+	public IEnumerator ChangeScene(string sceneName) {
 		sceneLoaded = true;
 
 		SceneManager.LoadScene ("LoadingScene");

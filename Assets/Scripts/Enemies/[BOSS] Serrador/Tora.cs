@@ -41,16 +41,8 @@ public class Tora : MonoBehaviour {
 
 		if (other.gameObject.tag == "Player") { //com o Player,
 
-			if (PlayerController.vulneravel) { //Se o Player estiver vulneravel:
+			PlayerController.Damage (danoArremessavel, false);
 
-				PlayerController.recebeKnockBack = true;
-				PlayerController.recebeDano = true;                
-				PlayerController.vidas -= danoArremessavel; //Subtrai o dano da habilidade/jogador;
-				PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
-			} else {
-
-				PlayerController.recebeKnockBack = true;
-			}
 
 			Destroy (gameObject, 0.4f);
 		}

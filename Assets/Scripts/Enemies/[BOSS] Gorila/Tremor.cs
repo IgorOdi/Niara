@@ -15,10 +15,8 @@ public class Tremor : MonoBehaviour {
 
 		if ((other.gameObject.tag == "Player" && Gorila.tremor) && (PlayerController.vulneravel && PlayerController.grounded)) {
 
-			PlayerController.recebeDano = true;
-			PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
-			PlayerController.vidas -= danoTremor;
-			PlayerController.recebeKnockBackVert = true;
+			PlayerController.Damage (danoTremor, true);
+
 		}
 	}
 }

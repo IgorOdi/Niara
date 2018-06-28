@@ -11,14 +11,7 @@ public class EnvDamager : MonoBehaviour {
 
 	    if (other.gameObject.tag == "Player") { //com o Player,
 
-		    if (PlayerController.vulneravel) { //Se o Player estiver vulneravel:
-
-			    PlayerController.recebeDano = true;
-			    PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
-			    PlayerController.vidas -= dano; //Subtrai o dano da habilidade/jogador;
-		    }
-
-			PlayerController.recebeKnockBackVert = true;
-	   }
+			PlayerController.Damage (dano, true);
+	    }
     }
 }

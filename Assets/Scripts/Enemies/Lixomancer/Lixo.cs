@@ -24,14 +24,8 @@ public class Lixo : MonoBehaviour {
 
 		if (other.gameObject.tag == "Player") { //com o Player,
 
-			if (PlayerController.vulneravel) { //Se o Player estiver vulneravel:
-
-				PlayerController.recebeDano = true;
-				PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
-				PlayerController.vidas -= dano; //Subtrai o dano da habilidade/jogador;
-			}
-
-			PlayerController.recebeKnockBack = true;
+			PlayerController.Damage (dano, false);
+		
 			Destroy (gameObject, 0f);
 		} else if (other.gameObject.tag == "Chão") {
 

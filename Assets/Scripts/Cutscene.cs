@@ -15,9 +15,9 @@ public class Cutscene : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{	
-		if (Input.GetKeyDown (KeyCode.DownArrow) || Input.GetKeyDown (KeyCode.RightArrow)) {
+		if (Input.GetKeyDown (KeyCode.DownArrow) || Input.GetKeyDown (KeyCode.RightArrow) || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Horizontal") == 1) {
 			step -= 10;
-		} else if (Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.LeftArrow)) {
+		} else if (Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown (KeyCode.LeftArrow) || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Horizontal") == -1) {
 			step += 10;
 		}
 

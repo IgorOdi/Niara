@@ -211,14 +211,7 @@ public class Lixoso : EnemyBehaviour {
 			socou = false;
 			placa.enabled = false;
 
-			if (PlayerController.grounded && PlayerController.vulneravel) {
-
-				PlayerController.recebeDano = true;
-				PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
-				PlayerController.vidas -= danoBase; //Subtrai o dano da habilidade/jogador;
-
-				PlayerController.recebeKnockBackVert = true;
-			}
+			if (PlayerController.grounded) PlayerController.Damage (danoBase, true);
 
 //			Instantiate (lixoWave, waveSpawn.position, waveSpawn.rotation);
 			skillCount++;

@@ -76,6 +76,7 @@ public class PlayerController: MonoBehaviour {
 	public bool facingRight = true; //Checa a direção do jogador.
 	public static bool grounded; //Checa se o personagem está no chão
 	public static bool canMove; //Checa se o personagem pode ou não se mover
+	public static bool moveBlock;
 	[SerializeField]
 	private bool canDoubleJump; //Checa se o peronagem usou o pulo duplo
 	public static float danoCausado = 1; //O quanto de vida o jogador tira dos inimigos
@@ -100,6 +101,7 @@ public class PlayerController: MonoBehaviour {
 		an = GetComponentInChildren<Animator>();
 		cam = Camera.main.GetComponent<CamFollow>();
 		canMove = true;
+		moveBlock = false;
 		canShoot = true;
 
 		facingRight = true;
@@ -219,8 +221,10 @@ public class PlayerController: MonoBehaviour {
 	void Player ()
 	{  //Função para controlar ações do jogador como andar, pular, etc...
 		HandleLayers();
-		if (canMove) Pular(); //Faz o jogador pular
-		MoverJogador ();  //Move o jogador
+
+		if (canMove) Pular (); //Faz o jogador pular
+		if (!moveBlock) MoverJogador ();//Move o jogador
+
 		playerAudio();
 
 		if(canShoot) aguiaScript.AguiaAtaque (); //Controla a Águia
@@ -384,7 +388,7 @@ public class PlayerController: MonoBehaviour {
             {  //Se o input estiver para a esquerda e o jogador ainda não estiver naquela direção...
                 flip();                            //Vire o jogador para a esquerda.
             }
-		
+			
 		Vector2 move = new Vector2 (horizontal * speed, rb.velocity.y);  //Cria um novo Vector2 chamado "move". Seu X é a multiplicação do input Horizontal pelo float da velocidade.
 		rb.velocity = move;  //Iguala a velocidade do jogador ao Vector2 criado acima.
 
@@ -448,5 +452,23 @@ public class PlayerController: MonoBehaviour {
 
 		yield return new WaitForSeconds (1f);
 		micoSprite.SetActive (false);
+	}
+
+	public static void Damage(int _dano, bool vert) {
+
+		if (PlayerController.vulneravel) { //Se o Player estiver vulneravel:
+
+			PlayerController.recebeDano = true;
+			PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
+			PlayerController.vidas -= _dano; //Subtrai o dano da habilidade/jogador;
+
+			if (vert) PlayerController.recebeKnockBackVert = true;
+			else PlayerController.recebeKnockBack = true;
+
+			if (PlayerController.vidas <= 0) {
+
+				RespawnPlayer.instance.VerifyDeath ();
+			}
+		}
 	}
 }

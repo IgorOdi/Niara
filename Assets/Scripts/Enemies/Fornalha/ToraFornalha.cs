@@ -34,14 +34,8 @@ public class ToraFornalha : MonoBehaviour {
 
 		if (other.gameObject.tag == "Player") { //com o Player,
 
-				PlayerController.recebeKnockBack = true;
-
-			if (PlayerController.vulneravel) { //Se o Player estiver vulneravel:
-
-				PlayerController.recebeDano = true;                
-				PlayerController.vidas -= danoArremessavel; //Subtrai o dano da habilidade/jogador;
-				PlayerController.vulneravel = false; //Deixa o jogador invulnerável (Tempo limitado).
-			}
+			PlayerController.Damage (danoArremessavel, false);
+				
 		}
 	}
 }
