@@ -61,6 +61,10 @@ public class EnemyBehaviour : MonoBehaviour { //Código que se aplicará a todos
 		wallLayer = LayerMask.GetMask ("Piso");
 	}
 
+	public virtual void Start() {
+
+	}
+
 	public virtual void Update () {
 
 		vivo = vidas > 0 ? true : false; //O que define se o Inimigo está vivo ou não.
@@ -141,6 +145,6 @@ public class EnemyBehaviour : MonoBehaviour { //Código que se aplicará a todos
 		}
 
 		Instantiate (destroy, transform.position, transform.rotation);
-		DestroyImmediate (gameObject);
+		gameObject.SetActive (false);
 	}
 }

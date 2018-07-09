@@ -30,6 +30,7 @@ public class Onca : MonoBehaviour {
 	public bool ataquePlayed;
 	public bool oncaPlayed;
 	public bool downPlayed;
+	private bool canOncaDown = true;
 
     public static bool atacou;
 
@@ -53,6 +54,8 @@ public class Onca : MonoBehaviour {
 		if (duracaoDash > 0.3f) dashOnca = false; //Se o duracaoDash passar de certo tempo, o dash será interrompido
 
         if (atacou) StartCoroutine(attackCool());
+
+		if (PlayerController.grounded && !canOncaDown) canOncaDown = true;
 
     }
 
@@ -133,7 +136,7 @@ public class Onca : MonoBehaviour {
 	}
 
 	public void OncaAtaqueAr () {
-		if ((Input.GetButtonDown ("Shield")  || Input.GetAxis("Shield") == 1) && !PlayerController.grounded && GameManager.oncaAtiva) {
+		if ((Input.GetButtonDown ("Shield")  || Input.GetAxis("Shield") == 1) && !PlayerController.grounded && GameManager.oncaAtiva && canOncaDown) {
 			PlayerController.vulneravel = false;
 			StartCoroutine (tempoVul ());
 
@@ -142,7 +145,7 @@ public class Onca : MonoBehaviour {
 				FMODUnity.RuntimeManager.PlayOneShot (somOnca);
 				oncaBool = true;
 			}
-
+				
 			player.rb.AddForce(transform.up * oncaFallPower * -1);
 			ataqueQueda.SetActive(true);
 			player.an.SetBool ("Onca Down", true);
@@ -173,7 +176,10 @@ public class Onca : MonoBehaviour {
 
 		if (ataqueQueda.activeSelf && (other.gameObject.tag == "Inimigo" || other.gameObject.tag == "Boss")) {
 
-			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, 200));
+			canOncaDown = false;
+			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, 1000));
+			ataqueQueda.SetActive(false);
+			player.an.SetBool ("Onca Down", false);
 		}
 
 	}

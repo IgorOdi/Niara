@@ -11,14 +11,13 @@ public class ArremessavelMonkey : ProjectileBase {
 	[SerializeField]
 	private Rigidbody2D rb;
 
-	void Awake() {
+	void Start() {
 
 		danoArremessavel = 1;
 
-		player = GameObject.Find ("Player").GetComponent<Transform>();
+		player = GameObject.Find ("Player").transform;
 
-		distanceMultiplier = player.transform.position.x > transform.position.x ? 1 : -1;
-		//distanceMultiplier = (transform.position.x - player.position.x) / 10;
+		distanceMultiplier = player.transform.position.x > transform.position.x ? -1 : 1;
 
 		rb = GetComponent<Rigidbody2D> ();
 		rb.AddForce (new Vector2(-450 * distanceMultiplier, 400));

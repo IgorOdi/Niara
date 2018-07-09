@@ -66,7 +66,7 @@ public class RespawnPlayer : MonoBehaviour
 			GameManager.instance.OnChangeScene (cena);
 		} else {
 
-			EnemyRespawn.respawnEnemy = true;
+			EnemyRespawn.instance.Respawn ();
 			player.rb.velocity = Vector2.zero;
 			player.transform.position = lastCheckpoint.position;
 			PlayerController.vidas = 5;
@@ -85,7 +85,7 @@ public class RespawnPlayer : MonoBehaviour
 	public IEnumerator ReturnMove() {
 
 		float startTime = Time.time;
-		while (Time.time < startTime + .5f)
+		while (Time.time < startTime + 0.75f)
 			yield return null;
 
 		PlayerController.moveBlock = false;

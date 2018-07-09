@@ -23,7 +23,7 @@ public class ZumbiShooter : EnemyBehaviour {
 	[FMODUnity.EventRef]
 	public string somVomito = "event:/Inimigos/impactoVomito3";
 
-	private void Start() {
+	public override void Start() {
 
 		vivo = true;
 		vidas = 2;

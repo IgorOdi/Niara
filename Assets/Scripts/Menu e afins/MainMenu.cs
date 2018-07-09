@@ -57,14 +57,14 @@ public class MainMenu : MonoBehaviour {
 
         //Debug.Log("MENU");
 
-		if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetAxisRaw("Vertical") == 1)
+		if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             FMODUnity.RuntimeManager.PlayOneShot(somSetaUp, transform.position);
             atual = selecionaMenu(botoes, atual, "up");
 
         }
 
-		if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetAxisRaw("Vertical") == -1)
+		if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             FMODUnity.RuntimeManager.PlayOneShot(somSetaDown, transform.position);
             atual = selecionaMenu(botoes, atual, "down");

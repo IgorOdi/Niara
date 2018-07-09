@@ -20,11 +20,11 @@ public class Prensa : MonoBehaviour {
 		anim.enabled = true;
 	}
 
-	void OnCollisionEnter2D (Collision2D other)
+	void OnTriggerEnter2D (Collider2D other)
 	{
 		if (other.gameObject.tag == "Player") {
 
-			PlayerController.Damage (1, false);
+			PlayerController.Damage (1, true);
 		}
 	}
 }

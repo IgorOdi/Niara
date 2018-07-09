@@ -15,7 +15,7 @@ public class FlyingShooter : EnemyBehaviour {
 	[SerializeField]
 	private Transform wallCheck;
 
-	void Start() {
+	public override void Start() {
 
 		vivo = true;
 		vidas = 1;
@@ -70,7 +70,7 @@ public class FlyingShooter : EnemyBehaviour {
 		yield return new WaitForSeconds (0.4f);
 		Instantiate (destroy, transform.position, Quaternion.identity);
 		Instantiate (alma, transform.position, Quaternion.identity);
-		DestroyImmediate (gameObject);
+		gameObject.SetActive (false);
 	}
 
 	void OnCollisionStay2D (Collision2D other) { //Quando entrar em colisão...

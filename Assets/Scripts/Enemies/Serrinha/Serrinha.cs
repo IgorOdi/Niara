@@ -15,7 +15,7 @@ public class Serrinha : EnemyBehaviour {
 	[SerializeField]
 	private Transform wallCheck;
 
-	void Start () {
+	public override void Start () {
 
 		// Controle de Vidas //
 

@@ -36,7 +36,7 @@ public class ZumbiTanker : EnemyBehaviour {
 	[FMODUnity.EventRef]
 	public string somAtaque = "event:/Inimigos/attack2";
 
-	void Start() {
+	public override void Start() {
 
 		vivo = true;
 		vidas = 6;

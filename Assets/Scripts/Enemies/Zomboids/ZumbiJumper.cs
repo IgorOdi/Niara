@@ -24,7 +24,7 @@ public class ZumbiJumper : EnemyBehaviour {
 	public string somIdle = "event:/Inimigos/idleZumbi";
 	public static FMOD.Studio.EventInstance idleZumbiEv;
 
-	void Start() {
+	public override void Start() {
 
 		vivo = true;
 		ativo = true;

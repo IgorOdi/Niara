@@ -21,7 +21,7 @@ public class GuardaR : EnemyBehaviour {
 	[FMODUnity.EventRef]
 	public string somTiro = "event:/Inimigos/tirao3";
 
-    private void Start() {
+	public override void Start() {
 
         vivo = true;
         vidas = 2;

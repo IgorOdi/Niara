@@ -4,41 +4,30 @@ using UnityEngine;
 
 public class EnemyRespawn : MonoBehaviour {
 
-	public static bool respawnEnemy;
-	private bool respawnLocal;
-    private bool caiporaAlada;
-    [SerializeField]
-    private GameObject enemyToSpawn;
-    private LayerMask enemyLayer;
+	public static EnemyRespawn instance;
+	public EnemyBehaviour[] inimigos;
+	public Vector3[] positions;
 
-    private void Start()
-    {
-        enemyLayer = LayerMask.GetMask("Inimigo");
-    }
+	void Start() {
 
-    private void Update() {
-		
-        caiporaAlada = Physics2D.OverlapBox(transform.position, new Vector2(25, 3), 0, enemyLayer);
-        
-		respawnLocal = respawnEnemy;
+		instance = this;
 
-		if (respawnLocal) {
-			
-			if (!caiporaAlada) {   
-				
-				Instantiate (enemyToSpawn, transform.position, Quaternion.identity);
-				respawnLocal = false;
-			}
+		inimigos = new EnemyBehaviour[transform.childCount];
+		positions = new Vector3[inimigos.Length];
+
+		for (int i = 0; i < inimigos.Length; i++) {
+
+			inimigos [i] = transform.GetChild (i).GetComponent<EnemyBehaviour>();
+			positions [i] = inimigos [i].transform.position;
 		}
-    }
+	}
 
-//	void OnDrawGizmos() {
-//
-//		Gizmos.DrawCube (transform.position, new Vector2 (25, 3));
-//	}
+	public void Respawn() {
 
-	void LateUpdate() {
+		for (int i = 0; i < inimigos.Length; i++) {
 
-		respawnEnemy = false;
+			inimigos [i].gameObject.SetActive (true);
+			inimigos [i].Start ();
+		}
 	}
 }

@@ -263,7 +263,7 @@ public class TRexAI : EnemyBehaviour {
 
 		idleTime += Time.fixedDeltaTime;
 
-		if (idleTime > 1) {
+		if (idleTime > 0.5f) {
 
 			roar = false;
 			idleTime = 0;

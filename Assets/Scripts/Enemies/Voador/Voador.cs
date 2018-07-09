@@ -22,7 +22,7 @@ public class Voador : EnemyBehaviour {
 	public static FMOD.Studio.EventInstance heliceEv;
 	protected FMOD.Studio.ParameterInstance ativoParam;
 
-	void Start() {
+	public override void Start() {
 
 		// Controle de Vidas //
 
@@ -116,7 +116,7 @@ public class Voador : EnemyBehaviour {
 		yield return new WaitForSeconds (0.4f);
 		Instantiate (destroy, transform.position, Quaternion.identity);
 		Instantiate (alma, transform.position, Quaternion.identity);
-		DestroyImmediate (gameObject);
+		gameObject.SetActive (false);
 	}
 
 	void OnCollisionStay2D (Collision2D other) { //Quando entrar em colisão...

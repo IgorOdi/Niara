@@ -29,7 +29,7 @@ public class SpiderLuz : EnemyBehaviour {
 	[FMODUnity.EventRef]
 	public string danielVoice = "event:/Inimigos/danielVoice";
 
-	void Start() {
+	public override void Start() {
 
 		vivo = true;
 		vidas = 1;
@@ -183,6 +183,6 @@ public class SpiderLuz : EnemyBehaviour {
 
 		yield return new WaitForSeconds (0.1f);
 		Instantiate (destroy, transform.position, Quaternion.identity);
-		DestroyImmediate (gameObject);
+		gameObject.SetActive (false);
 	}
 }

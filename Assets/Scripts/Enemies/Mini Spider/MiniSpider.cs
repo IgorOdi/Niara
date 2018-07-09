@@ -29,7 +29,7 @@ public class MiniSpider : EnemyBehaviour {
 	[FMODUnity.EventRef]
 	public string danielVoice = "event:/Inimigos/danielVoice";
 
-	void Start() {
+	public override void Start() {
 
 		vivo = true;
 		vidas = 1;
@@ -183,8 +183,8 @@ public class MiniSpider : EnemyBehaviour {
 
 	IEnumerator morteCooldown() {
 
-		yield return new WaitForSeconds (6f);
+		yield return new WaitForSeconds (.1f);
 		Instantiate (destroy, transform.position, Quaternion.identity);
-		DestroyImmediate (gameObject);
+		gameObject.SetActive (false);
 	}
 }

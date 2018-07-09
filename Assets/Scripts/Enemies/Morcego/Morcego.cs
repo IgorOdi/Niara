@@ -16,7 +16,7 @@ public class Morcego : EnemyBehaviour {
 
     Alcance restScript;
 
-    private void Start() {
+	public override void Start() {
 
         vivo = true;
         vidas = 1;

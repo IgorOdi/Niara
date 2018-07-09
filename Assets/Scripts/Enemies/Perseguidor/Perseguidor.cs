@@ -21,7 +21,7 @@ public class Perseguidor : EnemyBehaviour {
 	[FMODUnity.EventRef]
 	public string somBark = "event:/Inimigos/latidoagudo";
 
-    void Start() {
+	public override void Start() {
 
         vivo = true;
         vidas = 2;

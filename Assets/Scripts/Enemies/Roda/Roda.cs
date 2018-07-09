@@ -16,7 +16,7 @@ public class Roda : EnemyBehaviour {
 
 	private Vector2 move;
 
-	void Start() {
+	public override void Start() {
 
 		vivo = true;
 		vidas = 1;

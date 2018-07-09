@@ -28,15 +28,17 @@ public class Respawn : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {//Se tiver colisão com a plataforma embaixo de tudo
         
-		PlayerController.Damage (1, true);
+		if (other.gameObject.tag == "Player") {
+			PlayerController.Damage (1, true);
 
-		if (PlayerController.vidas > 0) {
+			if (PlayerController.vidas > 0) {
 
-			EnemyRespawn.respawnEnemy = true;
-			RespawnPlayer.instance.player.rb.velocity = Vector2.zero;
-			PlayerController.moveBlock = true;
-			RespawnPlayer.instance.player.transform.position = RespawnPlayer.instance.lastCheckpoint.position;
-			StartCoroutine (RespawnPlayer.instance.ReturnMove ());
+				EnemyRespawn.instance.Respawn ();
+				RespawnPlayer.instance.player.rb.velocity = Vector2.zero;
+				PlayerController.moveBlock = true;
+				RespawnPlayer.instance.player.transform.position = RespawnPlayer.instance.lastCheckpoint.position;
+				StartCoroutine (RespawnPlayer.instance.ReturnMove ());
+			}
 		}
 
 //        if (other.tag == "Player") { //E quem colidiu é o Player

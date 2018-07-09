@@ -14,7 +14,7 @@ public class Lixomancer : EnemyBehaviour {
 
     private int currentState;
 
-    private void Start() {
+	public override void Start() {
 
         vivo = true;
         vidas = 2;

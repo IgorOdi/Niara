@@ -17,7 +17,7 @@ public class Fornalha : EnemyBehaviour {
 	[FMODUnity.EventRef]
 	public string somShoot = "event:/Inimigos/tiro3";
 
-    private void Start() {
+	public override void Start() {
 
         vivo = true;
         vidas = 3;

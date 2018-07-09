@@ -14,7 +14,7 @@ public class MonkeyBot : EnemyBehaviour {
 	[SerializeField]
 	private Transform spawn;
 
-	void Start() {
+	public override void Start() {
 
 		vivo = true;
 		vidas = 1;
